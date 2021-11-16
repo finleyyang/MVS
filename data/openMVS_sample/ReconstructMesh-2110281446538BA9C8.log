@@ -1,0 +1,24 @@
+14:46:53 [App     ] Build date: Oct 28 2021, 11:52:19
+14:46:53 [App     ] CPU: 11th Gen Intel(R) Core(TM) i7-11700F @ 2.50GHz (8 cores)
+14:46:53 [App     ] RAM: 15.61GB Physical Memory 2.00GB Virtual Memory
+14:46:53 [App     ] OS: Linux 5.4.0-89-generic (x86_64)
+14:46:53 [App     ] SSE & AVX compatible CPU & OS detected
+14:46:53 [App     ] Command line: -w /home/finley/CODE/MVS/data/openMVS_sample -i test_dense.mvs -o test_mesh.mvs
+14:46:54 [App     ] Scene loaded (797ms):
+	11 images (11 calibrated) with a total of 15.81 MPixels (1.44 MPixels/image)
+	1483876 points, 0 vertices, 0 faces
+14:47:00 [App     ] Delaunay tetrahedralization completed: 1483876 points -> 560460 vertices, 3510830 (+90) cells, 7021705 (+135) faces (5s579ms)
+14:47:08 [App     ] Delaunay tetrahedras weighting completed: 3510920 cells, 7021840 faces (7s880ms)
+14:47:13 [App     ] Delaunay tetrahedras graph-cut completed (498904 flow): 503166 vertices, 1006657 faces (5s483ms)
+14:47:17 [App     ] Mesh reconstruction completed: 503267 vertices, 1006361 faces (22s305ms)
+14:47:21 [App     ] Cleaned mesh: 502982 vertices, 1005296 faces (4s693ms)
+14:47:24 [App     ] Cleaned mesh: 502984 vertices, 1005298 faces (2s336ms)
+14:47:25 [App     ] Cleaned mesh: 502984 vertices, 1005298 faces (1s89ms)
+14:47:25 [App     ] Scene saved (431ms):
+	11 images (11 calibrated)
+	0 points, 502984 vertices, 1005298 faces
+14:47:25 [App     ] Mesh saved: 502984 vertices, 1005298 faces (66ms)
+14:47:25 [App     ] MEMORYINFO: {
+14:47:25 [App     ] 	VmPeak:	 1786384 kB
+14:47:25 [App     ] 	VmSize:	 1073216 kB
+14:47:25 [App     ] } ENDINFO

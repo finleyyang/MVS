@@ -1,0 +1,20 @@
+14:58:59 [App     ] Build date: Oct 28 2021, 11:52:19
+14:58:59 [App     ] CPU: 11th Gen Intel(R) Core(TM) i7-11700F @ 2.50GHz (8 cores)
+14:58:59 [App     ] RAM: 15.61GB Physical Memory 2.00GB Virtual Memory
+14:58:59 [App     ] OS: Linux 5.4.0-89-generic (x86_64)
+14:58:59 [App     ] SSE & AVX compatible CPU & OS detected
+14:58:59 [App     ] Command line: -w /home/finley/CODE/MVS/data/openMVS_sample/ -i test_refinemesh.mvs -o test_texture.mvs
+14:58:59 [App     ] Scene loaded (32ms):
+	11 images (11 calibrated) with a total of 63.22 MPixels (5.75 MPixels/image)
+	0 points, 70135 vertices, 139080 faces
+14:59:06 [App     ] Assigning the best view to each face completed: 139080 faces (6s496ms)
+14:59:09 [App     ] Generating texture atlas and image completed: 905 patches, 8192 image size (3s349ms)
+14:59:09 [App     ] Mesh texturing completed: 70135 vertices, 139080 faces (9s851ms)
+14:59:14 [App     ] Scene saved (5s218ms):
+	11 images (11 calibrated)
+	0 points, 70135 vertices, 139080 faces
+14:59:18 [App     ] Mesh saved: 70135 vertices, 139080 faces (3s618ms)
+14:59:18 [App     ] MEMORYINFO: {
+14:59:18 [App     ] 	VmPeak:	 2861612 kB
+14:59:18 [App     ] 	VmSize:	 1133952 kB
+14:59:18 [App     ] } ENDINFO
