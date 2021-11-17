@@ -4,6 +4,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Math.dir/Common.cpp.o"
   "CMakeFiles/Math.dir/IBFS/IBFS.cpp.o"
   "CMakeFiles/Math.dir/LMFit/lmmin.cpp.o"
+  "cotire/Math_CXX_prefix.cxx"
+  "cotire/Math_CXX_prefix.hxx"
+  "cotire/Math_CXX_prefix.hxx.gch"
 )
 
 # Per-language clean rules from dependency scanning.

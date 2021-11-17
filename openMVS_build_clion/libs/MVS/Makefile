@@ -175,6 +175,20 @@ MVS/fast:
 	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS.dir/build.make libs/MVS/CMakeFiles/MVS.dir/build
 .PHONY : MVS/fast
 
+# Convenience name for target.
+libs/MVS/CMakeFiles/MVS_pch.dir/rule:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/MVS/CMakeFiles/MVS_pch.dir/rule
+.PHONY : libs/MVS/CMakeFiles/MVS_pch.dir/rule
+
+# Convenience name for target.
+MVS_pch: libs/MVS/CMakeFiles/MVS_pch.dir/rule
+.PHONY : MVS_pch
+
+# fast build rule for target.
+MVS_pch/fast:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS_pch.dir/build.make libs/MVS/CMakeFiles/MVS_pch.dir/build
+.PHONY : MVS_pch/fast
+
 Camera.o: Camera.cpp.o
 .PHONY : Camera.o
 
@@ -547,6 +561,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... MVS_pch"
 	@echo "... MVS"
 	@echo "... Camera.o"
 	@echo "... Camera.i"
