@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget Common Math MVS IO InterfaceCOLMAP InterfaceVisualSFM DensifyPointCloud ReconstructMesh RefineMesh TextureMesh Viewer)
+foreach(_expectedTarget Common Math MVS IO InterfaceCOLMAP InterfaceVisualSFM DensifyPointCloud ReconstructMesh RefineMesh TextureMesh)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -89,9 +89,6 @@ add_executable(RefineMesh IMPORTED)
 
 # Create imported target TextureMesh
 add_executable(TextureMesh IMPORTED)
-
-# Create imported target Viewer
-add_executable(Viewer IMPORTED)
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)
   message(FATAL_ERROR "This file relies on consumers using CMake 2.8.12 or greater.")

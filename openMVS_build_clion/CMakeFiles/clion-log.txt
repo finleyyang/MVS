@@ -196,7 +196,7 @@ Compiling with C++14
 -- CGAL 4.11 found (include: /usr//include)
 -- VCG  found (include: /home/finley/CODE/MVS/vcglib)
 -- GLEW 2.0.0 found (include: /usr/include)
--- GLFW3 3.2.1 found (include: )
+-- Can't find GLFW3. Continuing without it.
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/finley/CODE/MVS/openMVS_build_clion

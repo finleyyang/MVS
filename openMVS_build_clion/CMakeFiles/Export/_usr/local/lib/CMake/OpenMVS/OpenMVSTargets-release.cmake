@@ -99,14 +99,5 @@ set_target_properties(TextureMesh PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS TextureMesh )
 list(APPEND _IMPORT_CHECK_FILES_FOR_TextureMesh "/usr/local/bin/OpenMVS/TextureMesh" )
 
-# Import target "Viewer" for configuration "Release"
-set_property(TARGET Viewer APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(Viewer PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/usr/local/bin/OpenMVS/Viewer"
-  )
-
-list(APPEND _IMPORT_CHECK_TARGETS Viewer )
-list(APPEND _IMPORT_CHECK_FILES_FOR_Viewer "/usr/local/bin/OpenMVS/Viewer" )
-
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

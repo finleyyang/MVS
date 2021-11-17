@@ -204,5 +204,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/DependInfo.cmake"
   "apps/RefineMesh/CMakeFiles/RefineMesh.dir/DependInfo.cmake"
   "apps/TextureMesh/CMakeFiles/TextureMesh.dir/DependInfo.cmake"
-  "apps/Viewer/CMakeFiles/Viewer.dir/DependInfo.cmake"
   )

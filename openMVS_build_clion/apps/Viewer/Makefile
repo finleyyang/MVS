@@ -89,27 +89,6 @@ install/local/fast: preinstall/fast
 	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"dev\" \"lib\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -129,6 +108,27 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"dev\" \"lib\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -161,164 +161,6 @@ depend:
 	cd /home/finley/CODE/MVS/openMVS_build_clion && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-apps/Viewer/CMakeFiles/Viewer.dir/rule:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/Viewer/CMakeFiles/Viewer.dir/rule
-.PHONY : apps/Viewer/CMakeFiles/Viewer.dir/rule
-
-# Convenience name for target.
-Viewer: apps/Viewer/CMakeFiles/Viewer.dir/rule
-.PHONY : Viewer
-
-# fast build rule for target.
-Viewer/fast:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/build
-.PHONY : Viewer/fast
-
-Camera.o: Camera.cpp.o
-.PHONY : Camera.o
-
-# target to build an object file
-Camera.cpp.o:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Camera.cpp.o
-.PHONY : Camera.cpp.o
-
-Camera.i: Camera.cpp.i
-.PHONY : Camera.i
-
-# target to preprocess a source file
-Camera.cpp.i:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Camera.cpp.i
-.PHONY : Camera.cpp.i
-
-Camera.s: Camera.cpp.s
-.PHONY : Camera.s
-
-# target to generate assembly for a file
-Camera.cpp.s:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Camera.cpp.s
-.PHONY : Camera.cpp.s
-
-Common.o: Common.cpp.o
-.PHONY : Common.o
-
-# target to build an object file
-Common.cpp.o:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Common.cpp.o
-.PHONY : Common.cpp.o
-
-Common.i: Common.cpp.i
-.PHONY : Common.i
-
-# target to preprocess a source file
-Common.cpp.i:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Common.cpp.i
-.PHONY : Common.cpp.i
-
-Common.s: Common.cpp.s
-.PHONY : Common.s
-
-# target to generate assembly for a file
-Common.cpp.s:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Common.cpp.s
-.PHONY : Common.cpp.s
-
-Image.o: Image.cpp.o
-.PHONY : Image.o
-
-# target to build an object file
-Image.cpp.o:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Image.cpp.o
-.PHONY : Image.cpp.o
-
-Image.i: Image.cpp.i
-.PHONY : Image.i
-
-# target to preprocess a source file
-Image.cpp.i:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Image.cpp.i
-.PHONY : Image.cpp.i
-
-Image.s: Image.cpp.s
-.PHONY : Image.s
-
-# target to generate assembly for a file
-Image.cpp.s:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Image.cpp.s
-.PHONY : Image.cpp.s
-
-Scene.o: Scene.cpp.o
-.PHONY : Scene.o
-
-# target to build an object file
-Scene.cpp.o:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Scene.cpp.o
-.PHONY : Scene.cpp.o
-
-Scene.i: Scene.cpp.i
-.PHONY : Scene.i
-
-# target to preprocess a source file
-Scene.cpp.i:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Scene.cpp.i
-.PHONY : Scene.cpp.i
-
-Scene.s: Scene.cpp.s
-.PHONY : Scene.s
-
-# target to generate assembly for a file
-Scene.cpp.s:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Scene.cpp.s
-.PHONY : Scene.cpp.s
-
-Viewer.o: Viewer.cpp.o
-.PHONY : Viewer.o
-
-# target to build an object file
-Viewer.cpp.o:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Viewer.cpp.o
-.PHONY : Viewer.cpp.o
-
-Viewer.i: Viewer.cpp.i
-.PHONY : Viewer.i
-
-# target to preprocess a source file
-Viewer.cpp.i:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Viewer.cpp.i
-.PHONY : Viewer.cpp.i
-
-Viewer.s: Viewer.cpp.s
-.PHONY : Viewer.s
-
-# target to generate assembly for a file
-Viewer.cpp.s:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Viewer.cpp.s
-.PHONY : Viewer.cpp.s
-
-Window.o: Window.cpp.o
-.PHONY : Window.o
-
-# target to build an object file
-Window.cpp.o:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Window.cpp.o
-.PHONY : Window.cpp.o
-
-Window.i: Window.cpp.i
-.PHONY : Window.i
-
-# target to preprocess a source file
-Window.cpp.i:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Window.cpp.i
-.PHONY : Window.cpp.i
-
-Window.s: Window.cpp.s
-.PHONY : Window.s
-
-# target to generate assembly for a file
-Window.cpp.s:
-	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/Window.cpp.s
-.PHONY : Window.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -331,25 +173,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Viewer"
-	@echo "... Camera.o"
-	@echo "... Camera.i"
-	@echo "... Camera.s"
-	@echo "... Common.o"
-	@echo "... Common.i"
-	@echo "... Common.s"
-	@echo "... Image.o"
-	@echo "... Image.i"
-	@echo "... Image.s"
-	@echo "... Scene.o"
-	@echo "... Scene.i"
-	@echo "... Scene.s"
-	@echo "... Viewer.o"
-	@echo "... Viewer.i"
-	@echo "... Viewer.s"
-	@echo "... Window.o"
-	@echo "... Window.i"
-	@echo "... Window.s"
 .PHONY : help
 
 

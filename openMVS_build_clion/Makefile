@@ -304,19 +304,6 @@ TextureMesh/fast:
 	$(MAKE) $(MAKESILENT) -f apps/TextureMesh/CMakeFiles/TextureMesh.dir/build.make apps/TextureMesh/CMakeFiles/TextureMesh.dir/build
 .PHONY : TextureMesh/fast
 
-#=============================================================================
-# Target rules for targets named Viewer
-
-# Build rule for target.
-Viewer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Viewer
-.PHONY : Viewer
-
-# fast build rule for target.
-Viewer/fast:
-	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/build
-.PHONY : Viewer/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -340,7 +327,6 @@ help:
 	@echo "... ReconstructMesh"
 	@echo "... RefineMesh"
 	@echo "... TextureMesh"
-	@echo "... Viewer"
 .PHONY : help
 
 

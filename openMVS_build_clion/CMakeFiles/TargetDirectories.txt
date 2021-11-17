@@ -89,11 +89,10 @@
 /home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/CMakeFiles/list_install_components.dir
 /home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/install/strip.dir
 /home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/install/local.dir
-/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/Viewer.dir
-/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/install.dir
-/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/list_install_components.dir
 /home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/edit_cache.dir
 /home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/rebuild_cache.dir
+/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/list_install_components.dir
+/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/CMakeFiles/install.dir
 /home/finley/CODE/MVS/openMVS_build_clion/docs/CMakeFiles/install/strip.dir
 /home/finley/CODE/MVS/openMVS_build_clion/docs/CMakeFiles/install/local.dir
 /home/finley/CODE/MVS/openMVS_build_clion/docs/CMakeFiles/edit_cache.dir

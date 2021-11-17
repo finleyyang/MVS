@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MVS.iml" filepath="$PROJECT_DIR$/.idea/MVS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OpenMVS.iml" filepath="$PROJECT_DIR$/.idea/OpenMVS.iml" />
     </modules>
   </component>
 </project>

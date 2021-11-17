@@ -208,7 +208,7 @@ apps/TextureMesh/clean: apps/TextureMesh/CMakeFiles/TextureMesh.dir/clean
 # Directory level rules for directory apps/Viewer
 
 # Recursive "all" directory target.
-apps/Viewer/all: apps/Viewer/CMakeFiles/Viewer.dir/all
+apps/Viewer/all:
 .PHONY : apps/Viewer/all
 
 # Recursive "preinstall" directory target.
@@ -216,7 +216,7 @@ apps/Viewer/preinstall:
 .PHONY : apps/Viewer/preinstall
 
 # Recursive "clean" directory target.
-apps/Viewer/clean: apps/Viewer/CMakeFiles/Viewer.dir/clean
+apps/Viewer/clean:
 .PHONY : apps/Viewer/clean
 
 #=============================================================================
@@ -616,34 +616,6 @@ TextureMesh: apps/TextureMesh/CMakeFiles/TextureMesh.dir/rule
 apps/TextureMesh/CMakeFiles/TextureMesh.dir/clean:
 	$(MAKE) $(MAKESILENT) -f apps/TextureMesh/CMakeFiles/TextureMesh.dir/build.make apps/TextureMesh/CMakeFiles/TextureMesh.dir/clean
 .PHONY : apps/TextureMesh/CMakeFiles/TextureMesh.dir/clean
-
-#=============================================================================
-# Target rules for target apps/Viewer/CMakeFiles/Viewer.dir
-
-# All Build rule for target.
-apps/Viewer/CMakeFiles/Viewer.dir/all: libs/Common/CMakeFiles/Common.dir/all
-apps/Viewer/CMakeFiles/Viewer.dir/all: libs/Math/CMakeFiles/Math.dir/all
-apps/Viewer/CMakeFiles/Viewer.dir/all: libs/MVS/CMakeFiles/MVS.dir/all
-	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/depend
-	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=56,57,58,59,60,61,62 "Built target Viewer"
-.PHONY : apps/Viewer/CMakeFiles/Viewer.dir/all
-
-# Build rule for subdir invocation for target.
-apps/Viewer/CMakeFiles/Viewer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 50
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/Viewer/CMakeFiles/Viewer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
-.PHONY : apps/Viewer/CMakeFiles/Viewer.dir/rule
-
-# Convenience name for target.
-Viewer: apps/Viewer/CMakeFiles/Viewer.dir/rule
-.PHONY : Viewer
-
-# clean rule for target.
-apps/Viewer/CMakeFiles/Viewer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/clean
-.PHONY : apps/Viewer/CMakeFiles/Viewer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
