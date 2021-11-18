@@ -45,6 +45,8 @@ namespace MVS {
 
 // a camera is represented as:
 // 投影矩阵  P = KR[I|-C]
+// 先平移然后再旋转，
+// 常用投影矩阵 P = K[R|t]，先旋转后平移
 // where R and C represent the camera orientation and position relative to the world coordinate system;
 // R is expressed as the rotation from world to camera coordinates 
 // C is expressed as the explicit camera center in world coordinates
@@ -53,6 +55,10 @@ namespace MVS {
 // with x pointing right, y pointing down, and z pointing forward
 // 右手坐标系：x轴朝右，y轴朝下，z轴指向前方
 // (see: R. Hartley, "Multiple View Geometry," 2004, pp. 156.)
+
+// 投影矩阵  P = KR[I|-C]
+// 先平移然后再旋转，
+// 常用投影矩阵 P = K[R|t]，先旋转后平移
 // !!! 注意 C指点是相机中心在世界坐标系中的坐标，而非我们常用的平移向量。我们常用的坐标转换（世界到相机）：p_c=R*p_w+t
 // !!! t是平移向量。相机中心p_c=[0,0,0],根据上述公式推出其在世界坐标系中的坐标p_w=-R_invert*t。这个值就是我们的C
 // !!! 将C=-R_invert*t代入P = KR[I|-C]，p_c=R(p_w-(-R_invert*t))=Rp_w+t  p=k*p_c

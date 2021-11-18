@@ -74,6 +74,7 @@ public:
 	EVTClose() : Event(EVT_CLOSE) {}
 };
 
+
 class EVTProcessImage : public Event
 {
 public:
@@ -1700,9 +1701,14 @@ bool Scene::ComputeDepthMaps(DenseDepthMapData& data)
 	// prepare images for dense reconstruction (load if needed)
 	// Step 1 数据准备：load 图像，对图像进行筛选去除无效图像,并根据传入的参数nResolutionLeval对load的图像做resize,对应相机参数做同样调整。
 	{
+        //初始化
 		TD_TIMER_START();
+        //data.image 存放的是一个list，list存放的是用来计算深度图的图像的ID的，只记录需要计算的，有效的
 		data.images.Reserve(images.GetSize());
+        //imagesMap 用来记录那些帧是可用的，那些帧是用来计算深度图的，如果是有效的将会记录的是在data.image中的ID是多少，而不是图像的ID，图像的ID包含无效的图片
 		imagesMap.Resize(images.GetSize());
+
+        //一张一张处理图像
 		#ifdef DENSE_USE_OPENMP
 		bool bAbort(false);
 		#pragma omp parallel for shared(data, bAbort)
@@ -1735,9 +1741,11 @@ bool Scene::ComputeDepthMaps(DenseDepthMapData& data)
 				data.images.Insert(idxImage);
 			}
 			// reload image at the appropriate resolution
+            // nResolutionLevel 用来处理深度的图像的分辨率的参数
 			//最大分辨率计算方式：imagesize=max(width,height), nMaxResolution=imagesize/2^nResolutionLevel
 			//                  if(nMaxResolution<OPTDENSE::nMinResolution),从level为0开始找到最开始大于OPTDENSE::nMinResolution的值作为nMaxResolution;
 			//                  最后 nMaxResolution=min(nMaxResolution,OPTDENSE::nMaxResolution)
+            // nMinResolution 默认640， nMaxResolution 默认3200， 图像的最大边
 			const unsigned nMaxResolution(imageData.RecomputeMaxResolution(OPTDENSE::nResolutionLevel, OPTDENSE::nMinResolution, OPTDENSE::nMaxResolution));
 			// 根据计算的分辨率对图像进行resize
 			if (!imageData.ReloadImage(nMaxResolution)) {
@@ -1883,7 +1891,16 @@ void* DenseReconstructionEstimateTmp(void* arg) {
  * @brief 深度图计算的主流程各个环节线程启动，包括depth初始化：主要是通过稀疏点进行插值优化 depth计算 depth优化
  * 
  * @param[in/out] pData 输入输出数据，所有深度计算相关数据
+ *
+ * step1 参考帧的初始化 EVTProcessImage
+ * step2 深度图的重建 EVTEstimateDepthMap
+ *   step2.1 SGM算法 data.sgm.Match
+ *   step2.2 PatchMatch算法 data.depthMaps.EstimateDepthMap
+ * step3 优化深度图 EVTOptimizeDepthMap
+ * step4 保存深度图 EVTSaveDepthMap
+ *
  */
+
 void Scene::DenseReconstructionEstimate(void* pData)
 {
 	DenseDepthMapData& data = *((DenseDepthMapData*)pData);

@@ -146,6 +146,7 @@ float Image::ResizeImage(unsigned nMaxResolution)
 	if (nMaxResolution == 0 || MAXF(width,height) <= nMaxResolution)
 		return 1.f;
 	float scale;
+    // 主要一点是最长边与nMaxResolution的比例
 	if (width > height) {
 		scale = (float)nMaxResolution/width;
 		height = height*nMaxResolution/width;

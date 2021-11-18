@@ -2451,11 +2451,13 @@ unsigned TImage<TYPE>::computeMaxResolution(unsigned width, unsigned height, uns
 		return MINF(imageSize, maxImageSize);
 	// compute the resolution corresponding to the desired level
 	// 计算我们期望的level的图像分辨率
+    // >>为右移level相当于除以level的2次方
 	unsigned size = (imageSize >> level);
 	// if the image is too small
 	// 如果期望level得到的图像分辨率小于我们给定的最小阈值则从最大level开始加直到出现大于等于最小阈值的最小level
 	if (size < minImageSize) {
 		// start from the max level
+        // 如果小于最小最小尺寸，那就level从0开始计算，计算到刚好大于minImageSize的情况
 		level = 0;
 		while ((imageSize>>(level+1)) >= minImageSize)
 			++level;

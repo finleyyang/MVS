@@ -139,10 +139,10 @@ public:
 /*----------------------------------------------------------------*/
 
 struct MVS_API DenseDepthMapData {
-	Scene& scene;			
-	IIndexArr images;                 // 图像信息
-	IIndexArr neighborsMap;           // 记录每帧对应的参考帧
-	DepthMapsData depthMaps;
+	Scene& scene;			    //输入的所有数据
+	IIndexArr images;                 // 图像信息，用来计算深度图的图片ID
+	IIndexArr neighborsMap;           // 记录每帧对应的参考帧的ID
+	DepthMapsData depthMaps;          // 深度图
 	volatile Thread::safe_t idxImage; // 当前计算的帧id
 	SEACAVE::EventQueue events;       // 内部深度计算事件队列 internal events queue (processed by the working threads)
 	Semaphore sem;
