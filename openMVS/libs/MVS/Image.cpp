@@ -371,7 +371,7 @@ bool Image::StereoRectifyImages(const Image& image1, const Image& image2, const 
 	//                                     |1,  0,  0    ,       -cx|
 	//  Q =  |Kl(Rlnew)-1,  0| * Q'   Q' = |0,  1,  0    ,       -cy|
     //       |0          ,  1|             |0,  0,  0    ,         f|
-    //                                     |0,  0, -1/T  ,(cx-cx')/T|
+    //                                     |0,  0, -1/T  ,(cl- cr)/T|
     //
     //  B = -Tx
 	//   Q * [x, y, disparity, 1] = [X, Y, Z, 1] * w

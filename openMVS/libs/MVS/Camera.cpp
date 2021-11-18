@@ -361,7 +361,8 @@ REAL Camera::StereoRectifyFusiello(const cv::Size& size1, const Camera& camera1,
 	RMatrix R;
 	R.SetFromRowVectors(normalized(v1), normalized(v2), normalized(v3));
 
-	// new intrinsic (arbitrary)
+	// new intrinsic (arbitrary)（任意的）？？？？
+    // 实际没做多少改变？？？
 	// 新的内参
 	K1 = camera1.K; K1(0,1) = 0;
 	K2 = camera2.K; K2(0,1) = 0;
