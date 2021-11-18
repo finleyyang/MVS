@@ -47,9 +47,10 @@ namespace MVS {
 // 投影矩阵  P = KR[I|-C]
 // 先平移然后再旋转，
 // 常用投影矩阵 P = K[R|t]，先旋转后平移
+// t 是世界坐标在相机坐标中的偏移量
 // where R and C represent the camera orientation and position relative to the world coordinate system;
 // R is expressed as the rotation from world to camera coordinates 
-// C is expressed as the explicit camera center in world coordinates
+// C is expressed as the explicit camera center in world coordinates  相机的中心在世界坐标系中的坐标
 // (as opposite to standard form t which is negated and has the rotation of the camera already applied P = K[R|t]);
 // the world and camera coordinates system is right handed,
 // with x pointing right, y pointing down, and z pointing forward

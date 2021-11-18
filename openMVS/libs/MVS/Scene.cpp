@@ -506,6 +506,7 @@ bool Scene::Save(const String& fileName, ARCHIVE_TYPE type) const
 inline float Footprint(const Camera& camera, const Point3f& X) {
 	#if 0
 	// 跟论文中提到的计算方式一致，就是在当前点基础上移动一个距离，判断下在像素上移动多少个像素（空间中实际距离对于像素距离）
+    // fSphereRadius(1)平移的一个量
 	const REAL fSphereRadius(1);
 	const Point3 cX(camera.TransformPointW2C(Cast<REAL>(X)));
 	return (float)norm(camera.TransformPointC2I(Point3(cX.x+fSphereRadius,cX.y,cX.z))-camera.TransformPointC2I(cX))+std::numeric_limits<float>::epsilon();
@@ -523,7 +524,7 @@ inline float Footprint(const Camera& camera, const Point3f& X) {
 /**
  * @brief 邻域帧选择，主要是依据三个条件：共视点f在两个图像(V,R)的夹角(fV与fR组成的夹角)；邻域帧R与当前帧V的分辨率是否接近；
  *        共视点在图像中覆盖的面积area ，利用这三个条件我们给每一个候选者计算了一个score，分数越大越适合做邻域
- *		  思考：为什么选择这三个条件？？？见课件
+ *
  * @param[in] ID                  当前帧id，计算其邻域帧
  * @param[in] points              当前帧看到的所有三维稀疏点
  * @param[in] nMinViews           最小邻域 如果帧邻域小于该值认为没有足够邻域无法深度图计算
@@ -560,18 +561,23 @@ bool Scene::SelectNeighborViews(uint32_t ID, IndexArr& points, unsigned nMinView
 	// 和共视帧的相机原点坐标连线夹角angle,score=min((angle/foptiangle)^1.5,1)*wScale，该score意义是夹角越接
 	// 近我们设置的阈值foptiangle分数越高，一般阈值10°。目的是避免立体匹配时两帧图像夹角太小（基线小）
 	FOREACH(idx, pointcloud.points) {
+        // 那些帧可以看到该点，把能看到该点的帧存在views中
 		const PointCloud::ViewArr& views = pointcloud.pointViews[idx];
 		ASSERT(views.IsSorted());
+        //如果当前帧不在该点的可视帧中，就跳过
 		if (views.FindFirst(ID) == PointCloud::ViewArr::NO_INDEX)
 			continue;
 		// store this point 存储point
 		const PointCloud::Point& point = pointcloud.points[idx];
+
+        // 如果能看到该点的帧数大于阈值的话，就存储起来用于面积的计算
 		if (views.GetSize() >= nMinPointViews)
 			points.Insert((uint32_t)idx);
 		imageData.avgDepth += (float)imageData.camera.PointDepth(point);
 		++nPoints;
 		// score shared views
 		// score 共视views
+        // 相机与特征点之间的连线
 		const Point3f V1(imageData.camera.C - Cast<REAL>(point));
 		const float footprint1(Footprint(imageData.camera, point)); // f/d 
 		for (const PointCloud::View& view: views) {
@@ -616,11 +622,13 @@ bool Scene::SelectNeighborViews(uint32_t ID, IndexArr& points, unsigned nMinView
 			continue;
 		
 		const Score& score = scores[IDB];
+        // 如果是同一帧的话points就为零了
 		if (score.points < 3)
 			continue;
 		ASSERT(ID != IDB);
 		// compute how well the matched features are spread out (image covered area)
 		// 计算匹配的特征点在两个图像中覆盖的像素面积，取最小面积参与score参数计算
+        // bounds就是取图像长和宽的
 		const Point2f boundsA(imageData.GetSize());
 		const Point2f boundsB(imageDataB.GetSize());
 		ASSERT(projs.IsEmpty());
@@ -628,10 +636,12 @@ bool Scene::SelectNeighborViews(uint32_t ID, IndexArr& points, unsigned nMinView
 			const PointCloud::ViewArr& views = pointcloud.pointViews[idx];
 			ASSERT(views.IsSorted());
 			ASSERT(views.FindFirst(ID) != PointCloud::ViewArr::NO_INDEX);
+            // 查看能看到该特征点的的帧中包不包含IDB帧
 			if (views.FindFirst(IDB) == PointCloud::ViewArr::NO_INDEX)
 				continue;
 			const PointCloud::Point& point = pointcloud.points[idx];
 			// 投影到当前帧，并将投影的像素坐标存储在projs中
+            // projs中只存该特征点在当前帧的图像坐标上
 			Point2f& ptA = projs.AddConstruct(imageData.camera.ProjectPointP(point));
 			// 投影到邻域帧，用来后面判断是否在图像内
 			Point2f ptB = imageDataB.camera.ProjectPointP(point);
