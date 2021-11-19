@@ -66,24 +66,9 @@ include libs/Math/CMakeFiles/Math.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/Math/CMakeFiles/Math.dir/flags.make
 
-libs/Math/cotire/Math_CXX_prefix.hxx.gch: libs/Math/cotire/Math_CXX_prefix.hxx
-libs/Math/cotire/Math_CXX_prefix.hxx.gch: /usr/bin/c++
-libs/Math/cotire/Math_CXX_prefix.hxx.gch: libs/Math/cotire/Math_CXX_prefix.hxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX precompiled header libs/Math/cotire/Math_CXX_prefix.hxx.gch"
-	cd /home/finley/CODE/MVS/openMVS/libs/Math && /home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /home/finley/CODE/MVS/openMVS/build/Cotire.cmake precompile /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Math_CXX_Cotire.cmake /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.gch /home/finley/CODE/MVS/openMVS/libs/Math/Common.cpp
-
-libs/Math/cotire/Math_CXX_prefix.hxx: libs/Math/cotire/Math_CXX_prefix.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating CXX prefix header libs/Math/cotire/Math_CXX_prefix.hxx"
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /home/finley/CODE/MVS/openMVS/build/Cotire.cmake combine /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Math_CXX_Cotire.cmake /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.cxx
-
-libs/Math/cotire/Math_CXX_prefix.cxx: /home/finley/CODE/MVS/openMVS/libs/Math/Common.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating CXX prefix source libs/Math/cotire/Math_CXX_prefix.cxx"
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /home/finley/CODE/MVS/openMVS/build/Cotire.cmake combine /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Math_CXX_Cotire.cmake /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.cxx /home/finley/CODE/MVS/openMVS/libs/Math/Common.h
-
 libs/Math/CMakeFiles/Math.dir/Common.cpp.o: libs/Math/CMakeFiles/Math.dir/flags.make
 libs/Math/CMakeFiles/Math.dir/Common.cpp.o: /home/finley/CODE/MVS/openMVS/libs/Math/Common.cpp
-libs/Math/CMakeFiles/Math.dir/Common.cpp.o: libs/Math/cotire/Math_CXX_prefix.hxx.gch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/Math/CMakeFiles/Math.dir/Common.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/Math/CMakeFiles/Math.dir/Common.cpp.o"
 	cd /home/finley/CODE/MVS/openMVS_build_clion/libs/Math && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/Common.cpp.o -c /home/finley/CODE/MVS/openMVS/libs/Math/Common.cpp
 
 libs/Math/CMakeFiles/Math.dir/Common.cpp.i: cmake_force
@@ -96,8 +81,7 @@ libs/Math/CMakeFiles/Math.dir/Common.cpp.s: cmake_force
 
 libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o: libs/Math/CMakeFiles/Math.dir/flags.make
 libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o: /home/finley/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp
-libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o: libs/Math/cotire/Math_CXX_prefix.hxx.gch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o"
 	cd /home/finley/CODE/MVS/openMVS_build_clion/libs/Math && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/IBFS/IBFS.cpp.o -c /home/finley/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp
 
 libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.i: cmake_force
@@ -110,8 +94,7 @@ libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.s: cmake_force
 
 libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o: libs/Math/CMakeFiles/Math.dir/flags.make
 libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o: /home/finley/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp
-libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o: libs/Math/cotire/Math_CXX_prefix.hxx.gch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o"
 	cd /home/finley/CODE/MVS/openMVS_build_clion/libs/Math && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/LMFit/lmmin.cpp.o -c /home/finley/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp
 
 libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.i: cmake_force
@@ -136,7 +119,7 @@ lib/libMath.a: libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o
 lib/libMath.a: libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o
 lib/libMath.a: libs/Math/CMakeFiles/Math.dir/build.make
 lib/libMath.a: libs/Math/CMakeFiles/Math.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../lib/libMath.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../lib/libMath.a"
 	cd /home/finley/CODE/MVS/openMVS_build_clion/libs/Math && $(CMAKE_COMMAND) -P CMakeFiles/Math.dir/cmake_clean_target.cmake
 	cd /home/finley/CODE/MVS/openMVS_build_clion/libs/Math && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Math.dir/link.txt --verbose=$(VERBOSE)
 
@@ -148,9 +131,7 @@ libs/Math/CMakeFiles/Math.dir/clean:
 	cd /home/finley/CODE/MVS/openMVS_build_clion/libs/Math && $(CMAKE_COMMAND) -P CMakeFiles/Math.dir/cmake_clean.cmake
 .PHONY : libs/Math/CMakeFiles/Math.dir/clean
 
-libs/Math/CMakeFiles/Math.dir/depend: libs/Math/cotire/Math_CXX_prefix.cxx
-libs/Math/CMakeFiles/Math.dir/depend: libs/Math/cotire/Math_CXX_prefix.hxx
-libs/Math/CMakeFiles/Math.dir/depend: libs/Math/cotire/Math_CXX_prefix.hxx.gch
+libs/Math/CMakeFiles/Math.dir/depend:
 	cd /home/finley/CODE/MVS/openMVS_build_clion && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/finley/CODE/MVS/openMVS /home/finley/CODE/MVS/openMVS/libs/Math /home/finley/CODE/MVS/openMVS_build_clion /home/finley/CODE/MVS/openMVS_build_clion/libs/Math /home/finley/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/Math/CMakeFiles/Math.dir/depend
 

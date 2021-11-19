@@ -169,6 +169,7 @@ bool DepthMapsData::SelectViews(IIndexArr& images, IIndexArr& imagesMap, IIndexA
 	PairAreaMap edges;
 	double totScore(0);
 	unsigned numScores(0);
+    // 计算边的两个view的连接就是一个边
 	FOREACH(i, images) {
 		const IIndex idx(images[i]);
 		ASSERT(imagesMap[idx] != NO_ID);
@@ -176,6 +177,7 @@ bool DepthMapsData::SelectViews(IIndexArr& images, IIndexArr& imagesMap, IIndexA
 		ASSERT(neighbors.GetSize() <= OPTDENSE::nMaxViews);
 		// register edges
 		// 每个帧与它的n个邻域可以组成n个edge，并记录这两个帧的共视点覆盖的图像面积area。
+        // 这里的score是所有view对应的所有邻域view的score的和
 		FOREACHPTR(pNeighbor, neighbors) {
 			const IIndex idx2(pNeighbor->idx.ID);
 			ASSERT(imagesMap[idx2] != NO_ID);
@@ -366,13 +368,15 @@ bool DepthMapsData::InitViews(DepthData& depthData, IIndex idxNeighbor, IIndex n
 	if (idxNeighbor != NO_ID) {
 		// set target image as the given neighbor
 		const ViewScore& neighbor = depthData.neighbors[idxNeighbor];
+        // 在数组后面再添加一个空的数据
 		DepthData::ViewData& imageTrg = depthData.images.AddEmpty();
 		imageTrg.pImageData = &scene.images[neighbor.idx.ID];
-		imageTrg.scale = neighbor.idx.scale;//scale 是之前计算的reference与neighbor的图像尺度因子
+		imageTrg.scale = neighbor.idx.scale;//scale 是之前计算的reference与neighbor的图像尺度因子,分辨率的比值
 		imageTrg.camera = imageTrg.pImageData->camera;
 		// depth计算使用的都是灰度图
 		imageTrg.pImageData->image.toGray(imageTrg.image, cv::COLOR_BGR2GRAY, true);
 		// !!! resize neighbor帧 即将neighbor scale到与reference相同的尺度参考论文：Multi-View stereo for community photo collections(5.1 rescaling views)
+        // imageTrg转成reference相似的分辨率
 		if (imageTrg.ScaleImage(imageTrg.image, imageTrg.image, imageTrg.scale))
 			imageTrg.camera = imageTrg.pImageData->GetCamera(scene.platforms, imageTrg.image.size());
 		DEBUG_EXTRA("Reference image %3u paired with image %3u", idxImage, neighbor.idx.ID);
@@ -1957,7 +1961,7 @@ void Scene::DenseReconstructionEstimate(void* pData)
 		case EVT_ESTIMATEDEPTHMAP: {
 			const EVTEstimateDepthMap& evtImage = *((EVTEstimateDepthMap*)(Event*)evt);
 			// request next image initialization to be performed while computing this depth-map
-			// 计算当前帧深度时，下一帧图像初始化同时在做。
+			// 计算当前帧深度时，下一帧图像初始化同时在做，多线程处理
 			data.events.AddEvent(new EVTProcessImage((uint32_t)Thread::safeInc(data.idxImage)));
 			// extract depth map
 			// 提取深度

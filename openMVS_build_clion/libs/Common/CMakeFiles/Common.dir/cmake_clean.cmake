@@ -10,9 +10,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Common.dir/Timer.cpp.o"
   "CMakeFiles/Common.dir/Types.cpp.o"
   "CMakeFiles/Common.dir/Util.cpp.o"
-  "cotire/Common_CXX_prefix.cxx"
-  "cotire/Common_CXX_prefix.hxx"
-  "cotire/Common_CXX_prefix.hxx.gch"
 )
 
 # Per-language clean rules from dependency scanning.

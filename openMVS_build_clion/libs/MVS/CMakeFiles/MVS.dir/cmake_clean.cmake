@@ -16,9 +16,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o"
   "CMakeFiles/MVS.dir/SceneTexture.cpp.o"
   "CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o"
-  "cotire/MVS_CXX_prefix.cxx"
-  "cotire/MVS_CXX_prefix.hxx"
-  "cotire/MVS_CXX_prefix.hxx.gch"
 )
 
 # Per-language clean rules from dependency scanning.
