@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/finley/CODE/MVS/openMVS/libs/Math/Common.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/Common.cpp.o"
   "/home/finley/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o"
   "/home/finley/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o"
-  "/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx" "/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.gch"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

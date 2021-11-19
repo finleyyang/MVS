@@ -17,7 +17,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/finley/CODE/MVS/openMVS/libs/Common/Timer.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Timer.cpp.o"
   "/home/finley/CODE/MVS/openMVS/libs/Common/Types.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Types.cpp.o"
   "/home/finley/CODE/MVS/openMVS/libs/Common/Util.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Util.cpp.o"
-  "/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx" "/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.gch"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
