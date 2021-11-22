@@ -6854,8 +6854,7 @@ libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o: \
  /usr/local/include/opencv4/opencv2/video.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
- /usr/local/include/opencv4/opencv2/videoio.hpp \
- /usr/local/include/opencv4/opencv2/ximgproc/disparity_filter.hpp
+ /usr/local/include/opencv4/opencv2/videoio.hpp
 libs/MVS/cotire/MVS_CXX_prefix.hxx.gch: \
  /home/finley/CODE/MVS/openMVS/libs/Common/AABB.h \
  /home/finley/CODE/MVS/openMVS/libs/Common/AABB.inl \

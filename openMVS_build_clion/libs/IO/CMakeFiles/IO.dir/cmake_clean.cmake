@@ -13,6 +13,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/IO.dir/OBJ.cpp.o"
   "CMakeFiles/IO.dir/PLY.cpp.o"
   "CMakeFiles/IO.dir/read_pose.cpp.o"
+  "cotire/IO_CXX_prefix.cxx"
+  "cotire/IO_CXX_prefix.hxx"
+  "cotire/IO_CXX_prefix.hxx.gch"
 )
 
 # Per-language clean rules from dependency scanning.

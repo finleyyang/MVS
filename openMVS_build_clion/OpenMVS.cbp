@@ -157,6 +157,36 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Common_pch">
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 Common_pch"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="all_pch">
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 all_pch"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clean_cotire">
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean_cotire"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Math">
 				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libMath.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math"/>
@@ -229,6 +259,16 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Math_pch">
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 Math_pch"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="MVS">
 				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libMVS.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS"/>
@@ -296,6 +336,16 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MVS_pch">
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS_pch"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
@@ -374,6 +424,16 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IO_pch">
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO_pch"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
@@ -787,6 +847,84 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Viewer">
+				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/Viewer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_OPENMP"/>
+					<Add option="-D_USE_OPENGL"/>
+					<Add option="-D_USE_BOOST"/>
+					<Add option="-D_USE_EIGEN"/>
+					<Add option="-D_USE_NONFREE"/>
+					<Add option="-D_USE_FAST_FLOAT2INT"/>
+					<Add option="-D_USE_FAST_CBRT"/>
+					<Add option="-D_USE_SSE"/>
+					<Add directory="/home/finley/CODE/MVS/openMVS"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Viewer/fast">
+				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/Viewer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_OPENMP"/>
+					<Add option="-D_USE_OPENGL"/>
+					<Add option="-D_USE_BOOST"/>
+					<Add option="-D_USE_EIGEN"/>
+					<Add option="-D_USE_NONFREE"/>
+					<Add option="-D_USE_FAST_FLOAT2INT"/>
+					<Add option="-D_USE_FAST_CBRT"/>
+					<Add option="-D_USE_SSE"/>
+					<Add directory="/home/finley/CODE/MVS/openMVS"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Viewer_pch">
+				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer_pch"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/DensifyPointCloud/DensifyPointCloud.cpp">
 			<Option target="DensifyPointCloud"/>
@@ -814,6 +952,39 @@
 		</Unit>
 		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/TextureMesh/TextureMesh.cpp">
 			<Option target="TextureMesh"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Camera.cpp">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Camera.h">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Common.cpp">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Common.h">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Image.cpp">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Image.h">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Scene.cpp">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Scene.h">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Viewer.cpp">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Window.cpp">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Window.h">
+			<Option target="Viewer"/>
 		</Unit>
 		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/AABB.h">
 			<Option target="Common"/>
@@ -1202,8 +1373,56 @@
 		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedQuadratic2D.h">
 			<Option target="Math"/>
 		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.cxx.rule">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.hxx.gch.rule">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.hxx.rule">
+			<Option target="Viewer"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.cxx.rule">
+			<Option target="Common"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.gch.rule">
+			<Option target="Common"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.rule">
+			<Option target="Common"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.cxx.rule">
+			<Option target="IO"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.gch.rule">
+			<Option target="IO"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.rule">
+			<Option target="IO"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.cxx.rule">
+			<Option target="MVS"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.gch.rule">
+			<Option target="MVS"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.rule">
+			<Option target="MVS"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.cxx.rule">
+			<Option target="Math"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.gch.rule">
+			<Option target="Math"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.rule">
+			<Option target="Math"/>
+		</Unit>
 		<Unit filename="/home/finley/CODE/MVS/openMVS/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/finley/CODE/MVS/openMVS/build/Cotire.cmake">
+			<Option virtualFolder="CMake Files\build\"/>
 		</Unit>
 		<Unit filename="/home/finley/CODE/MVS/openMVS/build/OpenMVSConfig.cmake.in">
 			<Option virtualFolder="CMake Files\build\"/>

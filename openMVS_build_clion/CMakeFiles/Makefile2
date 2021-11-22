@@ -208,7 +208,7 @@ apps/TextureMesh/clean: apps/TextureMesh/CMakeFiles/TextureMesh.dir/clean
 # Directory level rules for directory apps/Viewer
 
 # Recursive "all" directory target.
-apps/Viewer/all:
+apps/Viewer/all: apps/Viewer/CMakeFiles/Viewer.dir/all
 .PHONY : apps/Viewer/all
 
 # Recursive "preinstall" directory target.
@@ -216,7 +216,8 @@ apps/Viewer/preinstall:
 .PHONY : apps/Viewer/preinstall
 
 # Recursive "clean" directory target.
-apps/Viewer/clean:
+apps/Viewer/clean: apps/Viewer/CMakeFiles/Viewer.dir/clean
+apps/Viewer/clean: apps/Viewer/CMakeFiles/Viewer_pch.dir/clean
 .PHONY : apps/Viewer/clean
 
 #=============================================================================
@@ -271,6 +272,9 @@ libs/Common/preinstall:
 
 # Recursive "clean" directory target.
 libs/Common/clean: libs/Common/CMakeFiles/Common.dir/clean
+libs/Common/clean: libs/Common/CMakeFiles/Common_pch.dir/clean
+libs/Common/clean: libs/Common/CMakeFiles/all_pch.dir/clean
+libs/Common/clean: libs/Common/CMakeFiles/clean_cotire.dir/clean
 .PHONY : libs/Common/clean
 
 #=============================================================================
@@ -286,6 +290,7 @@ libs/IO/preinstall:
 
 # Recursive "clean" directory target.
 libs/IO/clean: libs/IO/CMakeFiles/IO.dir/clean
+libs/IO/clean: libs/IO/CMakeFiles/IO_pch.dir/clean
 .PHONY : libs/IO/clean
 
 #=============================================================================
@@ -301,6 +306,7 @@ libs/MVS/preinstall:
 
 # Recursive "clean" directory target.
 libs/MVS/clean: libs/MVS/CMakeFiles/MVS.dir/clean
+libs/MVS/clean: libs/MVS/CMakeFiles/MVS_pch.dir/clean
 .PHONY : libs/MVS/clean
 
 #=============================================================================
@@ -316,6 +322,7 @@ libs/Math/preinstall:
 
 # Recursive "clean" directory target.
 libs/Math/clean: libs/Math/CMakeFiles/Math.dir/clean
+libs/Math/clean: libs/Math/CMakeFiles/Math_pch.dir/clean
 .PHONY : libs/Math/clean
 
 #=============================================================================
@@ -351,12 +358,12 @@ CMakeFiles/uninstall.dir/clean:
 libs/Common/CMakeFiles/Common.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common.dir/build.make libs/Common/CMakeFiles/Common.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common.dir/build.make libs/Common/CMakeFiles/Common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target Common"
 .PHONY : libs/Common/CMakeFiles/Common.dir/all
 
 # Build rule for subdir invocation for target.
 libs/Common/CMakeFiles/Common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Common/CMakeFiles/Common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : libs/Common/CMakeFiles/Common.dir/rule
@@ -371,18 +378,100 @@ libs/Common/CMakeFiles/Common.dir/clean:
 .PHONY : libs/Common/CMakeFiles/Common.dir/clean
 
 #=============================================================================
+# Target rules for target libs/Common/CMakeFiles/Common_pch.dir
+
+# All Build rule for target.
+libs/Common/CMakeFiles/Common_pch.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common_pch.dir/build.make libs/Common/CMakeFiles/Common_pch.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common_pch.dir/build.make libs/Common/CMakeFiles/Common_pch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=14,15,16 "Built target Common_pch"
+.PHONY : libs/Common/CMakeFiles/Common_pch.dir/all
+
+# Build rule for subdir invocation for target.
+libs/Common/CMakeFiles/Common_pch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Common/CMakeFiles/Common_pch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
+.PHONY : libs/Common/CMakeFiles/Common_pch.dir/rule
+
+# Convenience name for target.
+Common_pch: libs/Common/CMakeFiles/Common_pch.dir/rule
+.PHONY : Common_pch
+
+# clean rule for target.
+libs/Common/CMakeFiles/Common_pch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common_pch.dir/build.make libs/Common/CMakeFiles/Common_pch.dir/clean
+.PHONY : libs/Common/CMakeFiles/Common_pch.dir/clean
+
+#=============================================================================
+# Target rules for target libs/Common/CMakeFiles/all_pch.dir
+
+# All Build rule for target.
+libs/Common/CMakeFiles/all_pch.dir/all: libs/Common/CMakeFiles/Common_pch.dir/all
+libs/Common/CMakeFiles/all_pch.dir/all: libs/Math/CMakeFiles/Math_pch.dir/all
+libs/Common/CMakeFiles/all_pch.dir/all: libs/MVS/CMakeFiles/MVS_pch.dir/all
+libs/Common/CMakeFiles/all_pch.dir/all: libs/IO/CMakeFiles/IO_pch.dir/all
+libs/Common/CMakeFiles/all_pch.dir/all: apps/Viewer/CMakeFiles/Viewer_pch.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/all_pch.dir/build.make libs/Common/CMakeFiles/all_pch.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/all_pch.dir/build.make libs/Common/CMakeFiles/all_pch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num= "Built target all_pch"
+.PHONY : libs/Common/CMakeFiles/all_pch.dir/all
+
+# Build rule for subdir invocation for target.
+libs/Common/CMakeFiles/all_pch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Common/CMakeFiles/all_pch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
+.PHONY : libs/Common/CMakeFiles/all_pch.dir/rule
+
+# Convenience name for target.
+all_pch: libs/Common/CMakeFiles/all_pch.dir/rule
+.PHONY : all_pch
+
+# clean rule for target.
+libs/Common/CMakeFiles/all_pch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/all_pch.dir/build.make libs/Common/CMakeFiles/all_pch.dir/clean
+.PHONY : libs/Common/CMakeFiles/all_pch.dir/clean
+
+#=============================================================================
+# Target rules for target libs/Common/CMakeFiles/clean_cotire.dir
+
+# All Build rule for target.
+libs/Common/CMakeFiles/clean_cotire.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/clean_cotire.dir/build.make libs/Common/CMakeFiles/clean_cotire.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/clean_cotire.dir/build.make libs/Common/CMakeFiles/clean_cotire.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=93 "Built target clean_cotire"
+.PHONY : libs/Common/CMakeFiles/clean_cotire.dir/all
+
+# Build rule for subdir invocation for target.
+libs/Common/CMakeFiles/clean_cotire.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Common/CMakeFiles/clean_cotire.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
+.PHONY : libs/Common/CMakeFiles/clean_cotire.dir/rule
+
+# Convenience name for target.
+clean_cotire: libs/Common/CMakeFiles/clean_cotire.dir/rule
+.PHONY : clean_cotire
+
+# clean rule for target.
+libs/Common/CMakeFiles/clean_cotire.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/clean_cotire.dir/build.make libs/Common/CMakeFiles/clean_cotire.dir/clean
+.PHONY : libs/Common/CMakeFiles/clean_cotire.dir/clean
+
+#=============================================================================
 # Target rules for target libs/Math/CMakeFiles/Math.dir
 
 # All Build rule for target.
 libs/Math/CMakeFiles/Math.dir/all: libs/Common/CMakeFiles/Common.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math.dir/build.make libs/Math/CMakeFiles/Math.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math.dir/build.make libs/Math/CMakeFiles/Math.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=46,47,48,49 "Built target Math"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=64,65,66,67,68,69,70 "Built target Math"
 .PHONY : libs/Math/CMakeFiles/Math.dir/all
 
 # Build rule for subdir invocation for target.
 libs/Math/CMakeFiles/Math.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Math/CMakeFiles/Math.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : libs/Math/CMakeFiles/Math.dir/rule
@@ -397,18 +486,44 @@ libs/Math/CMakeFiles/Math.dir/clean:
 .PHONY : libs/Math/CMakeFiles/Math.dir/clean
 
 #=============================================================================
+# Target rules for target libs/Math/CMakeFiles/Math_pch.dir
+
+# All Build rule for target.
+libs/Math/CMakeFiles/Math_pch.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math_pch.dir/build.make libs/Math/CMakeFiles/Math_pch.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math_pch.dir/build.make libs/Math/CMakeFiles/Math_pch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=71,72,73 "Built target Math_pch"
+.PHONY : libs/Math/CMakeFiles/Math_pch.dir/all
+
+# Build rule for subdir invocation for target.
+libs/Math/CMakeFiles/Math_pch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Math/CMakeFiles/Math_pch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
+.PHONY : libs/Math/CMakeFiles/Math_pch.dir/rule
+
+# Convenience name for target.
+Math_pch: libs/Math/CMakeFiles/Math_pch.dir/rule
+.PHONY : Math_pch
+
+# clean rule for target.
+libs/Math/CMakeFiles/Math_pch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math_pch.dir/build.make libs/Math/CMakeFiles/Math_pch.dir/clean
+.PHONY : libs/Math/CMakeFiles/Math_pch.dir/clean
+
+#=============================================================================
 # Target rules for target libs/MVS/CMakeFiles/MVS.dir
 
 # All Build rule for target.
 libs/MVS/CMakeFiles/MVS.dir/all: libs/IO/CMakeFiles/IO.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS.dir/build.make libs/MVS/CMakeFiles/MVS.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS.dir/build.make libs/MVS/CMakeFiles/MVS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target MVS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60 "Built target MVS"
 .PHONY : libs/MVS/CMakeFiles/MVS.dir/all
 
 # Build rule for subdir invocation for target.
 libs/MVS/CMakeFiles/MVS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 55
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/MVS/CMakeFiles/MVS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : libs/MVS/CMakeFiles/MVS.dir/rule
@@ -423,6 +538,32 @@ libs/MVS/CMakeFiles/MVS.dir/clean:
 .PHONY : libs/MVS/CMakeFiles/MVS.dir/clean
 
 #=============================================================================
+# Target rules for target libs/MVS/CMakeFiles/MVS_pch.dir
+
+# All Build rule for target.
+libs/MVS/CMakeFiles/MVS_pch.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS_pch.dir/build.make libs/MVS/CMakeFiles/MVS_pch.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS_pch.dir/build.make libs/MVS/CMakeFiles/MVS_pch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=61,62,63 "Built target MVS_pch"
+.PHONY : libs/MVS/CMakeFiles/MVS_pch.dir/all
+
+# Build rule for subdir invocation for target.
+libs/MVS/CMakeFiles/MVS_pch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/MVS/CMakeFiles/MVS_pch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
+.PHONY : libs/MVS/CMakeFiles/MVS_pch.dir/rule
+
+# Convenience name for target.
+MVS_pch: libs/MVS/CMakeFiles/MVS_pch.dir/rule
+.PHONY : MVS_pch
+
+# clean rule for target.
+libs/MVS/CMakeFiles/MVS_pch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS_pch.dir/build.make libs/MVS/CMakeFiles/MVS_pch.dir/clean
+.PHONY : libs/MVS/CMakeFiles/MVS_pch.dir/clean
+
+#=============================================================================
 # Target rules for target libs/IO/CMakeFiles/IO.dir
 
 # All Build rule for target.
@@ -430,12 +571,12 @@ libs/IO/CMakeFiles/IO.dir/all: libs/Common/CMakeFiles/Common.dir/all
 libs/IO/CMakeFiles/IO.dir/all: libs/Math/CMakeFiles/Math.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/IO/CMakeFiles/IO.dir/build.make libs/IO/CMakeFiles/IO.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/IO/CMakeFiles/IO.dir/build.make libs/IO/CMakeFiles/IO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target IO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target IO"
 .PHONY : libs/IO/CMakeFiles/IO.dir/all
 
 # Build rule for subdir invocation for target.
 libs/IO/CMakeFiles/IO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/IO/CMakeFiles/IO.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : libs/IO/CMakeFiles/IO.dir/rule
@@ -450,6 +591,32 @@ libs/IO/CMakeFiles/IO.dir/clean:
 .PHONY : libs/IO/CMakeFiles/IO.dir/clean
 
 #=============================================================================
+# Target rules for target libs/IO/CMakeFiles/IO_pch.dir
+
+# All Build rule for target.
+libs/IO/CMakeFiles/IO_pch.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/IO/CMakeFiles/IO_pch.dir/build.make libs/IO/CMakeFiles/IO_pch.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/IO/CMakeFiles/IO_pch.dir/build.make libs/IO/CMakeFiles/IO_pch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=35,36,37 "Built target IO_pch"
+.PHONY : libs/IO/CMakeFiles/IO_pch.dir/all
+
+# Build rule for subdir invocation for target.
+libs/IO/CMakeFiles/IO_pch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/IO/CMakeFiles/IO_pch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
+.PHONY : libs/IO/CMakeFiles/IO_pch.dir/rule
+
+# Convenience name for target.
+IO_pch: libs/IO/CMakeFiles/IO_pch.dir/rule
+.PHONY : IO_pch
+
+# clean rule for target.
+libs/IO/CMakeFiles/IO_pch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/IO/CMakeFiles/IO_pch.dir/build.make libs/IO/CMakeFiles/IO_pch.dir/clean
+.PHONY : libs/IO/CMakeFiles/IO_pch.dir/clean
+
+#=============================================================================
 # Target rules for target apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir
 
 # All Build rule for target.
@@ -458,12 +625,12 @@ apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/all: libs/Math/CMakeFiles/Ma
 apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/all: libs/MVS/CMakeFiles/MVS.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/build.make apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/build.make apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=26,27 "Built target InterfaceCOLMAP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=38,39 "Built target InterfaceCOLMAP"
 .PHONY : apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/all
 
 # Build rule for subdir invocation for target.
 apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : apps/InterfaceCOLMAP/CMakeFiles/InterfaceCOLMAP.dir/rule
@@ -486,12 +653,12 @@ apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/all: libs/Math/CMakeFi
 apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/all: libs/MVS/CMakeFiles/MVS.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/build.make apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/build.make apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=28,29 "Built target InterfaceVisualSFM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=40,41 "Built target InterfaceVisualSFM"
 .PHONY : apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/all
 
 # Build rule for subdir invocation for target.
 apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : apps/InterfaceVisualSFM/CMakeFiles/InterfaceVisualSFM.dir/rule
@@ -514,12 +681,12 @@ apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/all: libs/Math/CMakeFile
 apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/all: libs/MVS/CMakeFiles/MVS.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/build.make apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/build.make apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=11,12 "Built target DensifyPointCloud"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=17,18 "Built target DensifyPointCloud"
 .PHONY : apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/all
 
 # Build rule for subdir invocation for target.
 apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : apps/DensifyPointCloud/CMakeFiles/DensifyPointCloud.dir/rule
@@ -542,12 +709,12 @@ apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/all: libs/Math/CMakeFiles/Ma
 apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/all: libs/MVS/CMakeFiles/MVS.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/build.make apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/build.make apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=50,51 "Built target ReconstructMesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=74,75 "Built target ReconstructMesh"
 .PHONY : apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/all
 
 # Build rule for subdir invocation for target.
 apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : apps/ReconstructMesh/CMakeFiles/ReconstructMesh.dir/rule
@@ -570,12 +737,12 @@ apps/RefineMesh/CMakeFiles/RefineMesh.dir/all: libs/Math/CMakeFiles/Math.dir/all
 apps/RefineMesh/CMakeFiles/RefineMesh.dir/all: libs/MVS/CMakeFiles/MVS.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/RefineMesh/CMakeFiles/RefineMesh.dir/build.make apps/RefineMesh/CMakeFiles/RefineMesh.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/RefineMesh/CMakeFiles/RefineMesh.dir/build.make apps/RefineMesh/CMakeFiles/RefineMesh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=52,53 "Built target RefineMesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=76,77 "Built target RefineMesh"
 .PHONY : apps/RefineMesh/CMakeFiles/RefineMesh.dir/all
 
 # Build rule for subdir invocation for target.
 apps/RefineMesh/CMakeFiles/RefineMesh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/RefineMesh/CMakeFiles/RefineMesh.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : apps/RefineMesh/CMakeFiles/RefineMesh.dir/rule
@@ -598,12 +765,12 @@ apps/TextureMesh/CMakeFiles/TextureMesh.dir/all: libs/Math/CMakeFiles/Math.dir/a
 apps/TextureMesh/CMakeFiles/TextureMesh.dir/all: libs/MVS/CMakeFiles/MVS.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/TextureMesh/CMakeFiles/TextureMesh.dir/build.make apps/TextureMesh/CMakeFiles/TextureMesh.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/TextureMesh/CMakeFiles/TextureMesh.dir/build.make apps/TextureMesh/CMakeFiles/TextureMesh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=54,55 "Built target TextureMesh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=78,79 "Built target TextureMesh"
 .PHONY : apps/TextureMesh/CMakeFiles/TextureMesh.dir/all
 
 # Build rule for subdir invocation for target.
 apps/TextureMesh/CMakeFiles/TextureMesh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/TextureMesh/CMakeFiles/TextureMesh.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
 .PHONY : apps/TextureMesh/CMakeFiles/TextureMesh.dir/rule
@@ -616,6 +783,60 @@ TextureMesh: apps/TextureMesh/CMakeFiles/TextureMesh.dir/rule
 apps/TextureMesh/CMakeFiles/TextureMesh.dir/clean:
 	$(MAKE) $(MAKESILENT) -f apps/TextureMesh/CMakeFiles/TextureMesh.dir/build.make apps/TextureMesh/CMakeFiles/TextureMesh.dir/clean
 .PHONY : apps/TextureMesh/CMakeFiles/TextureMesh.dir/clean
+
+#=============================================================================
+# Target rules for target apps/Viewer/CMakeFiles/Viewer.dir
+
+# All Build rule for target.
+apps/Viewer/CMakeFiles/Viewer.dir/all: libs/Common/CMakeFiles/Common.dir/all
+apps/Viewer/CMakeFiles/Viewer.dir/all: libs/Math/CMakeFiles/Math.dir/all
+apps/Viewer/CMakeFiles/Viewer.dir/all: libs/MVS/CMakeFiles/MVS.dir/all
+	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/depend
+	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=80,81,82,83,84,85,86,87,88,89 "Built target Viewer"
+.PHONY : apps/Viewer/CMakeFiles/Viewer.dir/all
+
+# Build rule for subdir invocation for target.
+apps/Viewer/CMakeFiles/Viewer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 65
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/Viewer/CMakeFiles/Viewer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
+.PHONY : apps/Viewer/CMakeFiles/Viewer.dir/rule
+
+# Convenience name for target.
+Viewer: apps/Viewer/CMakeFiles/Viewer.dir/rule
+.PHONY : Viewer
+
+# clean rule for target.
+apps/Viewer/CMakeFiles/Viewer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer.dir/build.make apps/Viewer/CMakeFiles/Viewer.dir/clean
+.PHONY : apps/Viewer/CMakeFiles/Viewer.dir/clean
+
+#=============================================================================
+# Target rules for target apps/Viewer/CMakeFiles/Viewer_pch.dir
+
+# All Build rule for target.
+apps/Viewer/CMakeFiles/Viewer_pch.dir/all:
+	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer_pch.dir/build.make apps/Viewer/CMakeFiles/Viewer_pch.dir/depend
+	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer_pch.dir/build.make apps/Viewer/CMakeFiles/Viewer_pch.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=90,91,92 "Built target Viewer_pch"
+.PHONY : apps/Viewer/CMakeFiles/Viewer_pch.dir/all
+
+# Build rule for subdir invocation for target.
+apps/Viewer/CMakeFiles/Viewer_pch.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/Viewer/CMakeFiles/Viewer_pch.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/finley/CODE/MVS/openMVS_build_clion/CMakeFiles 0
+.PHONY : apps/Viewer/CMakeFiles/Viewer_pch.dir/rule
+
+# Convenience name for target.
+Viewer_pch: apps/Viewer/CMakeFiles/Viewer_pch.dir/rule
+.PHONY : Viewer_pch
+
+# clean rule for target.
+apps/Viewer/CMakeFiles/Viewer_pch.dir/clean:
+	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer_pch.dir/build.make apps/Viewer/CMakeFiles/Viewer_pch.dir/clean
+.PHONY : apps/Viewer/CMakeFiles/Viewer_pch.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

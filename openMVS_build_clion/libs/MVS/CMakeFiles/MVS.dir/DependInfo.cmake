@@ -23,6 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/finley/CODE/MVS/openMVS/libs/MVS/SceneRefineCUDA.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o"
   "/home/finley/CODE/MVS/openMVS/libs/MVS/SceneTexture.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.o"
   "/home/finley/CODE/MVS/openMVS/libs/MVS/SemiGlobalMatcher.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o"
+  "/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx" "/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.gch"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

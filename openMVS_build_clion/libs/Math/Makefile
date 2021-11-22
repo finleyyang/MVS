@@ -65,6 +65,27 @@ CMAKE_BINARY_DIR = /home/finley/CODE/MVS/openMVS_build_clion
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"dev\" \"lib\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -89,26 +110,15 @@ install/local/fast: preinstall/fast
 	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"dev\" \"lib\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -119,16 +129,6 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -174,6 +174,20 @@ Math: libs/Math/CMakeFiles/Math.dir/rule
 Math/fast:
 	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math.dir/build.make libs/Math/CMakeFiles/Math.dir/build
 .PHONY : Math/fast
+
+# Convenience name for target.
+libs/Math/CMakeFiles/Math_pch.dir/rule:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Math/CMakeFiles/Math_pch.dir/rule
+.PHONY : libs/Math/CMakeFiles/Math_pch.dir/rule
+
+# Convenience name for target.
+Math_pch: libs/Math/CMakeFiles/Math_pch.dir/rule
+.PHONY : Math_pch
+
+# fast build rule for target.
+Math_pch/fast:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math_pch.dir/build.make libs/Math/CMakeFiles/Math_pch.dir/build
+.PHONY : Math_pch/fast
 
 Common.o: Common.cpp.o
 .PHONY : Common.o
@@ -259,6 +273,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... Math_pch"
 	@echo "... Math"
 	@echo "... Common.o"
 	@echo "... Common.i"

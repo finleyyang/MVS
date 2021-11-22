@@ -296,8 +296,34 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Ignore headers with the listed file extensions from the generated
+// prefix header.
+COTIRE_ADDITIONAL_PREFIX_HEADER_IGNORE_EXTENSIONS:STRING=inc;inl;ipp
+
+//Ignore headers from these directories when generating the prefix
+// header.
+COTIRE_ADDITIONAL_PREFIX_HEADER_IGNORE_PATH:STRING=
+
+//Enable cotire debugging output?
+COTIRE_DEBUG:BOOL=OFF
+
+//Maximum number of source files to include in a single unity source
+// file.
+COTIRE_MAXIMUM_NUMBER_OF_UNITY_INCLUDES:STRING=0
+
+//Minimum number of sources in target required to enable use of
+// precompiled header.
+COTIRE_MINIMUM_NUMBER_OF_TARGET_SOURCES:STRING=2
+
+//Ignore sources with the listed file extensions from the generated
+// unity source.
+COTIRE_UNITY_SOURCE_EXCLUDE_EXTENSIONS:STRING=m;mm
+
+//Enable cotire verbose output?
+COTIRE_VERBOSE:BOOL=OFF
+
 //Dependencies for the target
-Common_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_gapi;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;general;opencv_alphamat;general;opencv_aruco;general;opencv_barcode;general;opencv_bgsegm;general;opencv_bioinspired;general;opencv_ccalib;general;opencv_datasets;general;opencv_dnn_objdetect;general;opencv_dnn_superres;general;opencv_dpm;general;opencv_face;general;opencv_freetype;general;opencv_fuzzy;general;opencv_hdf;general;opencv_hfs;general;opencv_img_hash;general;opencv_intensity_transform;general;opencv_line_descriptor;general;opencv_mcc;general;opencv_optflow;general;opencv_phase_unwrapping;general;opencv_plot;general;opencv_quality;general;opencv_rapid;general;opencv_reg;general;opencv_rgbd;general;opencv_saliency;general;opencv_shape;general;opencv_stereo;general;opencv_structured_light;general;opencv_superres;general;opencv_surface_matching;general;opencv_text;general;opencv_tracking;general;opencv_videostab;general;opencv_viz;general;opencv_wechat_qrcode;general;opencv_xfeatures2d;general;opencv_ximgproc;general;opencv_xobjdetect;general;opencv_xphoto;
+Common_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_gapi;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;
 
 EIGEN_DIR:PATH=/usr/include/eigen3
 
@@ -532,6 +558,9 @@ c_default:PATH=   -W -Wall -Werror=address -Werror=sequence-point -Wformat -Werr
 //Common compile CXX flags
 cxx_default:PATH='   -W -Wall -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Winit-self -Wsign-promo -Wreorder -Wno-undef -Wno-switch -Wno-switch-enum -Wno-switch-default -Wno-implicit-fallthrough -Wno-comment -Wno-narrowing -Wno-attributes -Wno-ignored-attributes -Wno-maybe-uninitialized -Wno-enum-compare -Wno-misleading-indentation -Wno-missing-field-initializers -Wno-unused-result -Wno-unused-function -Wno-unused-parameter -Wno-delete-incomplete -Wno-int-in-bool-context -fdiagnostics-show-option -ftemplate-backtrace-limit=0 -Wno-long-long -pthread -fomit-frame-pointer -frounding-math -msse -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -ffunction-sections -Wall -fexceptions '
 
+//Path to a library.
+pkgcfg_lib_GLFW_glfw:FILEPATH=/usr/lib/x86_64-linux-gnu/libglfw.so
+
 
 ########################
 # INTERNAL cache entries
@@ -736,6 +765,16 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Common cotire message.
+COTIREMSG_Common:INTERNAL=CXX target Common cotired without unity build.
+//IO cotire message.
+COTIREMSG_IO:INTERNAL=CXX target IO cotired without unity build.
+//MVS cotire message.
+COTIREMSG_MVS:INTERNAL=CXX target MVS cotired without unity build.
+//Math cotire message.
+COTIREMSG_Math:INTERNAL=CXX target Math cotired without unity build.
+//Viewer cotire message.
+COTIREMSG_Viewer:INTERNAL=CXX target Viewer cotired without unity build.
 //ADVANCED property for variable: EIGEN_DIR
 EIGEN_DIR-ADVANCED:INTERNAL=1
 //Details about finding Boost
@@ -763,24 +802,34 @@ GLEW_STATIC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 GLFW_CFLAGS:INTERNAL=
 GLFW_CFLAGS_I:INTERNAL=
 GLFW_CFLAGS_OTHER:INTERNAL=
-GLFW_FOUND:INTERNAL=
-GLFW_INCLUDEDIR:INTERNAL=
-GLFW_LIBDIR:INTERNAL=
+GLFW_FOUND:INTERNAL=1
+GLFW_INCLUDEDIR:INTERNAL=/usr/include
+GLFW_INCLUDE_DIRS:INTERNAL=
+GLFW_LDFLAGS:INTERNAL=-lglfw
+GLFW_LDFLAGS_OTHER:INTERNAL=
+GLFW_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+GLFW_LIBRARIES:INTERNAL=glfw
+GLFW_LIBRARY_DIRS:INTERNAL=
 GLFW_LIBS:INTERNAL=
 GLFW_LIBS_L:INTERNAL=
 GLFW_LIBS_OTHER:INTERNAL=
 GLFW_LIBS_PATHS:INTERNAL=
-GLFW_MODULE_NAME:INTERNAL=
-GLFW_PREFIX:INTERNAL=
+GLFW_MODULE_NAME:INTERNAL=glfw3
+GLFW_PREFIX:INTERNAL=/usr
 GLFW_STATIC_CFLAGS:INTERNAL=
 GLFW_STATIC_CFLAGS_I:INTERNAL=
 GLFW_STATIC_CFLAGS_OTHER:INTERNAL=
+GLFW_STATIC_INCLUDE_DIRS:INTERNAL=
+GLFW_STATIC_LDFLAGS:INTERNAL=-lglfw;-lrt;-lm;-ldl
+GLFW_STATIC_LDFLAGS_OTHER:INTERNAL=
 GLFW_STATIC_LIBDIR:INTERNAL=
+GLFW_STATIC_LIBRARIES:INTERNAL=glfw;rt;m;dl
+GLFW_STATIC_LIBRARY_DIRS:INTERNAL=
 GLFW_STATIC_LIBS:INTERNAL=
 GLFW_STATIC_LIBS_L:INTERNAL=
 GLFW_STATIC_LIBS_OTHER:INTERNAL=
 GLFW_STATIC_LIBS_PATHS:INTERNAL=
-GLFW_VERSION:INTERNAL=
+GLFW_VERSION:INTERNAL=3.2.1
 GLFW_glfw3_INCLUDEDIR:INTERNAL=
 GLFW_glfw3_LIBDIR:INTERNAL=
 GLFW_glfw3_PREFIX:INTERNAL=
@@ -1043,4 +1092,7 @@ _USE_JPG:INTERNAL=TRUE
 _USE_PNG:INTERNAL=TRUE
 _USE_TIFF:INTERNAL=TRUE
 __pkg_config_checked_GLFW:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_GLFW_glfw
+pkgcfg_lib_GLFW_glfw-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

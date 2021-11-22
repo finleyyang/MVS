@@ -65,6 +65,47 @@ CMAKE_BINARY_DIR = /home/finley/CODE/MVS/openMVS_build_clion
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"dev\" \"lib\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -88,47 +129,6 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"dev\" \"lib\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -174,6 +174,48 @@ Common: libs/Common/CMakeFiles/Common.dir/rule
 Common/fast:
 	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common.dir/build.make libs/Common/CMakeFiles/Common.dir/build
 .PHONY : Common/fast
+
+# Convenience name for target.
+libs/Common/CMakeFiles/Common_pch.dir/rule:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Common/CMakeFiles/Common_pch.dir/rule
+.PHONY : libs/Common/CMakeFiles/Common_pch.dir/rule
+
+# Convenience name for target.
+Common_pch: libs/Common/CMakeFiles/Common_pch.dir/rule
+.PHONY : Common_pch
+
+# fast build rule for target.
+Common_pch/fast:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common_pch.dir/build.make libs/Common/CMakeFiles/Common_pch.dir/build
+.PHONY : Common_pch/fast
+
+# Convenience name for target.
+libs/Common/CMakeFiles/all_pch.dir/rule:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Common/CMakeFiles/all_pch.dir/rule
+.PHONY : libs/Common/CMakeFiles/all_pch.dir/rule
+
+# Convenience name for target.
+all_pch: libs/Common/CMakeFiles/all_pch.dir/rule
+.PHONY : all_pch
+
+# fast build rule for target.
+all_pch/fast:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/all_pch.dir/build.make libs/Common/CMakeFiles/all_pch.dir/build
+.PHONY : all_pch/fast
+
+# Convenience name for target.
+libs/Common/CMakeFiles/clean_cotire.dir/rule:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Common/CMakeFiles/clean_cotire.dir/rule
+.PHONY : libs/Common/CMakeFiles/clean_cotire.dir/rule
+
+# Convenience name for target.
+clean_cotire: libs/Common/CMakeFiles/clean_cotire.dir/rule
+.PHONY : clean_cotire
+
+# fast build rule for target.
+clean_cotire/fast:
+	cd /home/finley/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/clean_cotire.dir/build.make libs/Common/CMakeFiles/clean_cotire.dir/build
+.PHONY : clean_cotire/fast
 
 CUDA.o: CUDA.cpp.o
 .PHONY : CUDA.o
@@ -403,6 +445,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... Common_pch"
+	@echo "... all_pch"
+	@echo "... clean_cotire"
 	@echo "... Common"
 	@echo "... CUDA.o"
 	@echo "... CUDA.i"

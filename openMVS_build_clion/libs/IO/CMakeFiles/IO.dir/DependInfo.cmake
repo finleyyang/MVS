@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/finley/CODE/MVS/openMVS/libs/IO/OBJ.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/OBJ.cpp.o"
   "/home/finley/CODE/MVS/openMVS/libs/IO/PLY.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/PLY.cpp.o"
   "/home/finley/CODE/MVS/openMVS/libs/IO/read_pose.cpp" "/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/read_pose.cpp.o"
+  "/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx" "/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.gch"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
