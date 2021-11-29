@@ -472,6 +472,18 @@ float Image::Disparity2Distance(const Matrix3x3& K, const Matrix4x4& Q, const Po
 }
 // converts the given depth at the un-rectified image coordinates to
 // the disparity corresponding to the rectified image coordinates
+// 这边是不是应该乘上depth
+
+//bool Image::Depth2Disparity(const Matrix4x4& Q, const Point2f& u, float d, float& disparity)
+//{
+//    const REAL w((Q(3,0)*u.x*d + Q(3,1)*u.y*d + Q(3,2))*d + Q(3,3));
+//    if (ISZERO(w))
+//        return false;
+//    const REAL z((Q(2,0)*u.x*d + Q(2,1)*u.y*d + Q(2,2))*d + Q(2,3));
+//    disparity = -(float)(z/w);
+//    return true;
+//}
+
 bool Image::Depth2Disparity(const Matrix4x4& Q, const Point2f& u, float d, float& disparity)
 {
 	const REAL w((Q(3,0)*u.x + Q(3,1)*u.y + Q(3,2))*d + Q(3,3));
