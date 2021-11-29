@@ -5,197 +5,126 @@
 		<Option title="OpenMVS"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\build\;CMake Files\build\Modules\;CMake Files\build\Templates\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\;CMake Files\libs\;CMake Files\libs\Common\;CMake Files\libs\Math\;CMake Files\libs\MVS\;CMake Files\libs\IO\;CMake Files\apps\;CMake Files\apps\InterfaceCOLMAP\;CMake Files\apps\InterfaceVisualSFM\;CMake Files\apps\DensifyPointCloud\;CMake Files\apps\ReconstructMesh\;CMake Files\apps\RefineMesh\;CMake Files\apps\TextureMesh\;CMake Files\apps\Viewer\;CMake Files\docs\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\build\;CMake Files\build\Modules\;CMake Files\build\Templates\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.76.0\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.76.0\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_iostreams-1.76.0\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.76.0\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\;CMake Files\libs\;CMake Files\libs\Common\;CMake Files\libs\Math\;CMake Files\libs\MVS\;CMake Files\libs\IO\;CMake Files\apps\;CMake Files\apps\InterfaceCOLMAP\;CMake Files\apps\InterfaceVisualSFM\;CMake Files\apps\DensifyPointCloud\;CMake Files\apps\ReconstructMesh\;CMake Files\apps\RefineMesh\;CMake Files\apps\TextureMesh\;CMake Files\apps\Viewer\;CMake Files\docs\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install/strip">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="uninstall">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 uninstall"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Common">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libCommon.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-D_LIB"/>
-					<Add option="-D_USE_OPENMP"/>
-					<Add option="-D_USE_OPENGL"/>
-					<Add option="-D_USE_BOOST"/>
-					<Add option="-D_USE_EIGEN"/>
-					<Add option="-D_USE_NONFREE"/>
-					<Add option="-D_USE_FAST_FLOAT2INT"/>
-					<Add option="-D_USE_FAST_CBRT"/>
-					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 Common"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Common/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libCommon.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-D_LIB"/>
-					<Add option="-D_USE_OPENMP"/>
-					<Add option="-D_USE_OPENGL"/>
-					<Add option="-D_USE_BOOST"/>
-					<Add option="-D_USE_EIGEN"/>
-					<Add option="-D_USE_NONFREE"/>
-					<Add option="-D_USE_FAST_FLOAT2INT"/>
-					<Add option="-D_USE_FAST_CBRT"/>
-					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 Common/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Common_pch">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 Common_pch"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="all_pch">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 all_pch"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="clean_cotire">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean_cotire"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean_cotire"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Math">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libMath.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math"/>
+			<Target title="Common_pch">
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 Common_pch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="all_pch">
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 all_pch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Common">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libCommon.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_LIB"/>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -203,35 +132,37 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS/libs/Math/."/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_IOSTREAMS_DYN_LINK"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 Math"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 Common"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Math/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libMath.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math"/>
+			<Target title="Common/fast">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libCommon.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_LIB"/>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -239,45 +170,47 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS/libs/Math/."/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_IOSTREAMS_DYN_LINK"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 Math/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 Common/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Math_pch">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 Math_pch"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 Math_pch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MVS">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libMVS.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS"/>
+			<Target title="Math">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libMath.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_LIB"/>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -285,35 +218,38 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/finley/CODE/MVS/vcglib"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_IOSTREAMS_DYN_LINK"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/."/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 Math"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MVS/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libMVS.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS"/>
+			<Target title="Math/fast">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libMath.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_LIB"/>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -321,45 +257,48 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/finley/CODE/MVS/vcglib"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_IOSTREAMS_DYN_LINK"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/."/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 Math/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MVS_pch">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS_pch"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS_pch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="IO">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libIO.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO"/>
+			<Target title="MVS">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libMVS.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_LIB"/>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -367,38 +306,39 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add option="-D_USE_PNG"/>
-					<Add option="-D_USE_JPG"/>
-					<Add option="-D_USE_TIFF"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS/libs/IO/.."/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_IOSTREAMS_DYN_LINK"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add option="-DCGAL_USE_GMPXX=1"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/vcglib"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="IO/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/lib/libIO.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO"/>
+			<Target title="MVS/fast">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libMVS.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_LIB"/>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -406,47 +346,132 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add option="-D_USE_PNG"/>
-					<Add option="-D_USE_JPG"/>
-					<Add option="-D_USE_TIFF"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS/libs/IO/.."/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_IOSTREAMS_DYN_LINK"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add option="-DCGAL_USE_GMPXX=1"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/vcglib"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="IO_pch">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO_pch"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO_pch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IO">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libIO.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_LIB"/>
+					<Add option="-D_USE_OPENGL"/>
+					<Add option="-D_USE_BOOST"/>
+					<Add option="-D_USE_EIGEN"/>
+					<Add option="-D_USE_NONFREE"/>
+					<Add option="-D_USE_FAST_FLOAT2INT"/>
+					<Add option="-D_USE_FAST_CBRT"/>
+					<Add option="-D_USE_SSE"/>
+					<Add option="-D_USE_PNG"/>
+					<Add option="-D_USE_JPG"/>
+					<Add option="-D_USE_TIFF"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_IOSTREAMS_DYN_LINK"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/.."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IO/fast">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libIO.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_LIB"/>
+					<Add option="-D_USE_OPENGL"/>
+					<Add option="-D_USE_BOOST"/>
+					<Add option="-D_USE_EIGEN"/>
+					<Add option="-D_USE_NONFREE"/>
+					<Add option="-D_USE_FAST_FLOAT2INT"/>
+					<Add option="-D_USE_FAST_CBRT"/>
+					<Add option="-D_USE_SSE"/>
+					<Add option="-D_USE_PNG"/>
+					<Add option="-D_USE_JPG"/>
+					<Add option="-D_USE_TIFF"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_IOSTREAMS_DYN_LINK"/>
+					<Add option="-DBOOST_PROGRAM_OPTIONS_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/.."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="InterfaceCOLMAP">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/InterfaceCOLMAP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/InterfaceCOLMAP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -454,33 +479,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 InterfaceCOLMAP"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 InterfaceCOLMAP"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="InterfaceCOLMAP/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/InterfaceCOLMAP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/InterfaceCOLMAP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -488,33 +511,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 InterfaceCOLMAP/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 InterfaceCOLMAP/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="InterfaceVisualSFM">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/InterfaceVisualSFM" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/InterfaceVisualSFM" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -522,33 +543,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 InterfaceVisualSFM"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 InterfaceVisualSFM"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="InterfaceVisualSFM/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/InterfaceVisualSFM" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/InterfaceVisualSFM" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -556,33 +575,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 InterfaceVisualSFM/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 InterfaceVisualSFM/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="DensifyPointCloud">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/DensifyPointCloud" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/DensifyPointCloud" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -590,33 +607,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 DensifyPointCloud"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 DensifyPointCloud"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="DensifyPointCloud/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/DensifyPointCloud" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/DensifyPointCloud" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -624,33 +639,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 DensifyPointCloud/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 DensifyPointCloud/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReconstructMesh">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/ReconstructMesh" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/ReconstructMesh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -658,33 +671,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 ReconstructMesh"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 ReconstructMesh"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReconstructMesh/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/ReconstructMesh" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/ReconstructMesh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -692,33 +703,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 ReconstructMesh/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 ReconstructMesh/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RefineMesh">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/RefineMesh" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/RefineMesh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -726,33 +735,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 RefineMesh"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 RefineMesh"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RefineMesh/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/RefineMesh" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/RefineMesh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -760,33 +767,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 RefineMesh/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 RefineMesh/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TextureMesh">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/TextureMesh" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/TextureMesh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -794,33 +799,31 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 TextureMesh"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 TextureMesh"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TextureMesh/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/TextureMesh" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/TextureMesh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
 					<Add option="-D_USE_OPENGL"/>
 					<Add option="-D_USE_BOOST"/>
 					<Add option="-D_USE_EIGEN"/>
@@ -828,693 +831,847 @@
 					<Add option="-D_USE_FAST_FLOAT2INT"/>
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 TextureMesh/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Viewer">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/Viewer" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
-					<Add option="-D_USE_OPENGL"/>
-					<Add option="-D_USE_BOOST"/>
-					<Add option="-D_USE_EIGEN"/>
-					<Add option="-D_USE_NONFREE"/>
-					<Add option="-D_USE_FAST_FLOAT2INT"/>
-					<Add option="-D_USE_FAST_CBRT"/>
-					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Viewer/fast">
-				<Option output="/home/finley/CODE/MVS/openMVS_build_clion/bin/Viewer" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/bin"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-D_USE_OPENMP"/>
-					<Add option="-D_USE_OPENGL"/>
-					<Add option="-D_USE_BOOST"/>
-					<Add option="-D_USE_EIGEN"/>
-					<Add option="-D_USE_NONFREE"/>
-					<Add option="-D_USE_FAST_FLOAT2INT"/>
-					<Add option="-D_USE_FAST_CBRT"/>
-					<Add option="-D_USE_SSE"/>
-					<Add directory="/home/finley/CODE/MVS/openMVS"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 TextureMesh/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Viewer_pch">
-				<Option working_dir="/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer_pch"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer_pch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Viewer">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/Viewer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_OPENGL"/>
+					<Add option="-D_USE_BOOST"/>
+					<Add option="-D_USE_EIGEN"/>
+					<Add option="-D_USE_NONFREE"/>
+					<Add option="-D_USE_FAST_FLOAT2INT"/>
+					<Add option="-D_USE_FAST_CBRT"/>
+					<Add option="-D_USE_SSE"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Viewer/fast">
+				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/Viewer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_OPENGL"/>
+					<Add option="-D_USE_BOOST"/>
+					<Add option="-D_USE_EIGEN"/>
+					<Add option="-D_USE_NONFREE"/>
+					<Add option="-D_USE_FAST_FLOAT2INT"/>
+					<Add option="-D_USE_FAST_CBRT"/>
+					<Add option="-D_USE_SSE"/>
+					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/DensifyPointCloud/DensifyPointCloud.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/DensifyPointCloud/DensifyPointCloud.cpp">
 			<Option target="DensifyPointCloud"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/InterfaceCOLMAP/InterfaceCOLMAP.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/InterfaceCOLMAP/InterfaceCOLMAP.cpp">
 			<Option target="InterfaceCOLMAP"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/InterfaceCOLMAP/endian.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/InterfaceCOLMAP/endian.h">
 			<Option target="InterfaceCOLMAP"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/InterfaceVisualSFM/DataInterface.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/InterfaceVisualSFM/DataInterface.h">
 			<Option target="InterfaceVisualSFM"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/InterfaceVisualSFM/InterfaceVisualSFM.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/InterfaceVisualSFM/InterfaceVisualSFM.cpp">
 			<Option target="InterfaceVisualSFM"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/InterfaceVisualSFM/Util.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/InterfaceVisualSFM/Util.h">
 			<Option target="InterfaceVisualSFM"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/ReconstructMesh/ReconstructMesh.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/ReconstructMesh/ReconstructMesh.cpp">
 			<Option target="ReconstructMesh"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/RefineMesh/RefineMesh.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/RefineMesh/RefineMesh.cpp">
 			<Option target="RefineMesh"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/TextureMesh/TextureMesh.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/TextureMesh/TextureMesh.cpp">
 			<Option target="TextureMesh"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Camera.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Camera.cpp">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Camera.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Camera.h">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Common.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Common.cpp">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Common.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Common.h">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Image.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Image.cpp">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Image.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Image.h">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Scene.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Scene.cpp">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Scene.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Scene.h">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Viewer.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Viewer.cpp">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Window.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Window.cpp">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/Window.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/Window.h">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/AABB.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AABB.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/AABB.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AABB.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/AutoEstimator.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AutoEstimator.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/AutoPtr.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AutoPtr.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/CUDA.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/CUDA.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Common.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Common.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Config.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Config.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/ConfigTable.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/ConfigTable.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/CriticalSection.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CriticalSection.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/EventQueue.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/EventQueue.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/FastDelegate.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/FastDelegate.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/FastDelegateBind.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/FastDelegateBind.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/FastDelegateCPP11.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/FastDelegateCPP11.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/File.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/File.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Filters.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Filters.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/HTMLDoc.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/HTMLDoc.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/HalfFloat.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/HalfFloat.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Hash.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Hash.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/LinkLib.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/LinkLib.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/List.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/List.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Log.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Log.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/MemFile.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/MemFile.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/OBB.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/OBB.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/OBB.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/OBB.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Octree.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Octree.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Octree.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Octree.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Plane.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Plane.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Plane.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Plane.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Queue.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Queue.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Random.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Random.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Ray.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Ray.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Ray.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Ray.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Rotation.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Rotation.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Rotation.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Rotation.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/SML.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/SML.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Sampler.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Sampler.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Semaphore.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Semaphore.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/SharedPtr.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SharedPtr.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Sphere.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Sphere.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Sphere.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Sphere.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Streams.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Streams.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Strings.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Strings.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Thread.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Thread.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Timer.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Timer.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Types.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Types.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Types.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Util.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.cpp">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Util.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.h">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/Util.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.inl">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/Common.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Common.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/Common.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Common.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/Image.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Image.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/Image.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Image.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageBMP.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageBMP.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageBMP.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageBMP.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageDDS.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageDDS.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageDDS.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageDDS.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageJPG.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageJPG.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageJPG.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageJPG.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImagePNG.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImagePNG.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImagePNG.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImagePNG.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageSCI.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageSCI.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageSCI.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageSCI.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageTGA.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTGA.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageTGA.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTGA.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageTIFF.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTIFF.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/ImageTIFF.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTIFF.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/OBJ.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/OBJ.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/OBJ.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/OBJ.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/PLY.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/PLY.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/PLY.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/PLY.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/read_pose.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/read_pose.cpp">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/read_pose.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/read_pose.h">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Camera.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Camera.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Camera.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Camera.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Common.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Common.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Common.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Common.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/DepthMap.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/DepthMap.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/DepthMap.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/DepthMap.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Image.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Image.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Image.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Image.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Interface.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Interface.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Mesh.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Mesh.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Mesh.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Mesh.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Platform.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Platform.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Platform.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Platform.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/PointCloud.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/PointCloud.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/PointCloud.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/PointCloud.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/RectsBinPack.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/RectsBinPack.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/RectsBinPack.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/RectsBinPack.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Scene.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Scene.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/Scene.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Scene.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/SceneDensify.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneDensify.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/SceneDensify.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneDensify.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/SceneReconstruct.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneReconstruct.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/SceneRefine.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneRefine.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/SceneRefineCUDA.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneRefineCUDA.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/SceneTexture.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneTexture.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/SemiGlobalMatcher.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SemiGlobalMatcher.cpp">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/SemiGlobalMatcher.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SemiGlobalMatcher.h">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/Common.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.cpp">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/Common.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/LBP.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LBP.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/MRFEnergy.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/MRFEnergy.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/MRFEnergy.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/MRFEnergy.inl">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/instances.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/instances.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/minimize.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/minimize.inl">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/ordering.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/ordering.inl">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/treeProbabilities.inl">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/treeProbabilities.inl">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typeBinary.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typeBinary.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typeBinaryFast.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typeBinaryFast.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typeGeneral.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typeGeneral.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typePotts.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typePotts.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedLinear.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedLinear.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedLinear2D.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedLinear2D.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedQuadratic.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedQuadratic.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedQuadratic2D.h">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedQuadratic2D.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.cxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.cxx.rule">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.hxx.gch.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.hxx.pch.rule">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.hxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.hxx.rule">
 			<Option target="Viewer"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.cxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.cxx.rule">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.gch.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.pch.rule">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.rule">
 			<Option target="Common"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.cxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.cxx.rule">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.gch.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.pch.rule">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.rule">
 			<Option target="IO"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.cxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.cxx.rule">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.gch.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.pch.rule">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.rule">
 			<Option target="MVS"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.cxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.cxx.rule">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.gch.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.pch.rule">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.rule">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.rule">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/Cotire.cmake">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/Cotire.cmake">
 			<Option virtualFolder="CMake Files\build\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/OpenMVSConfig.cmake.in">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/OpenMVSConfig.cmake.in">
 			<Option virtualFolder="CMake Files\build\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/OpenMVSConfigVersion.cmake.in">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/OpenMVSConfigVersion.cmake.in">
 			<Option virtualFolder="CMake Files\build\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/Utils.cmake">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/Utils.cmake">
 			<Option virtualFolder="CMake Files\build\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/cmake_uninstall.cmake.in">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/cmake_uninstall.cmake.in">
 			<Option virtualFolder="CMake Files\build\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/Modules/FindBREAKPAD.cmake">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/Modules/FindBREAKPAD.cmake">
 			<Option virtualFolder="CMake Files\build\Modules\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/Modules/FindCGAL.cmake">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/Modules/FindCGAL.cmake">
 			<Option virtualFolder="CMake Files\build\Modules\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/Modules/FindEigen.cmake">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/Modules/FindEigen.cmake">
 			<Option virtualFolder="CMake Files\build\Modules\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/Modules/FindVCG.cmake">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/Modules/FindVCG.cmake">
 			<Option virtualFolder="CMake Files\build\Modules\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/build/Templates/ConfigLocal.h.in">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/Templates/ConfigLocal.h.in">
 			<Option virtualFolder="CMake Files\build\Templates\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/BoostDetectToolset-1.76.0.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/Boost-1.76.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.76.0\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\Boost-1.76.0\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.76.0\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_headers-1.76.0\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALExports-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_iostreams-1.76.0/boost_iostreams-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_iostreams-1.76.0\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALExports.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_iostreams-1.76.0/boost_iostreams-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_iostreams-1.76.0\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/../../../../../usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALLibConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\CGAL\"/>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_iostreams-1.76.0/libboost_iostreams-variant-mt-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_iostreams-1.76.0\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_iostreams-1.76.0/libboost_iostreams-variant-mt-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_iostreams-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_iostreams-1.76.0/libboost_iostreams-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_iostreams-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_iostreams-1.76.0/libboost_iostreams-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_iostreams-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_program_options-1.76.0/boost_program_options-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_program_options-1.76.0/boost_program_options-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_program_options-1.76.0/libboost_program_options-variant-mt-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_program_options-1.76.0/libboost_program_options-variant-mt-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_program_options-1.76.0/libboost_program_options-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_program_options-1.76.0/libboost_program_options-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_program_options-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_system-1.76.0/boost_system-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_system-1.76.0/boost_system-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-mt-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-mt-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_system-1.76.0/libboost_system-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_system-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/boost_serialization-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/boost_serialization-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-mt-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-mt-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/boost_serialization-1.76.0/libboost_serialization-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\boost_serialization-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGALConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGALConfigBuildVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGALConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_Common.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_CreateSingleSourceCGALProgram.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_GeneratorSpecificSettings.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_Macros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_SCM.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_SetupBoost.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_SetupCGALDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_SetupGMP.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_TweakFindBoost.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_VersionUtils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_add_test.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_enable_end_of_configuration_hook.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_setup_target_dependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/CGAL_target_use_TBB.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/FindGMP.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/FindGMPXX.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/CGAL/FindMPFR.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\CGAL\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/glew/CopyImportedTargetProperties.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/glew/glew-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/glew/glew-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/glew/glew-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glew\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/glfw3/glfw3Targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/../../../../../../../usr/local/lib/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Common/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\Common\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/Math/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\Math\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/MVS/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\MVS\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/libs/IO/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libs\IO\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/InterfaceCOLMAP/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/InterfaceCOLMAP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\InterfaceCOLMAP\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/InterfaceVisualSFM/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/InterfaceVisualSFM/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\InterfaceVisualSFM\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/DensifyPointCloud/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/DensifyPointCloud/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\DensifyPointCloud\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/ReconstructMesh/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/ReconstructMesh/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\ReconstructMesh\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/RefineMesh/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/RefineMesh/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\RefineMesh\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/TextureMesh/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/TextureMesh/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\TextureMesh\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/apps/Viewer/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\apps\Viewer\"/>
 		</Unit>
-		<Unit filename="/home/finley/CODE/MVS/openMVS/docs/CMakeLists.txt">
+		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/docs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\docs\"/>
 		</Unit>
 	</Project>

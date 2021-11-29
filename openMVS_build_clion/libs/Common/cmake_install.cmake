@@ -1,4 +1,4 @@
-# Install script for directory: /home/finley/CODE/MVS/openMVS/libs/Common
+# Install script for directory: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,11 +27,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -51,7 +46,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/OpenMVS" TYPE STATIC_LIBRARY FILES "/home/finley/CODE/MVS/openMVS_build_clion/lib/libCommon.a")
+file(INSTALL DESTINATION "/usr/local/lib/OpenMVS" TYPE STATIC_LIBRARY FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libCommon.a")
+  if(EXISTS "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libCommon.a" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libCommon.a")
+    execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libCommon.a")
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -64,54 +63,54 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONEN
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local/include/OpenMVS/Common" TYPE FILE FILES
-    "/home/finley/CODE/MVS/openMVS/libs/Common/AABB.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/AABB.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/AutoEstimator.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/AutoPtr.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/CUDA.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Common.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Config.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/ConfigTable.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/CriticalSection.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/EventQueue.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/FastDelegate.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/FastDelegateBind.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/FastDelegateCPP11.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/File.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Filters.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/HTMLDoc.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/HalfFloat.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Hash.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/LinkLib.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/List.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Log.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/MemFile.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/OBB.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/OBB.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Octree.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Octree.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Plane.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Plane.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Queue.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Random.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Ray.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Ray.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Rotation.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Rotation.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/SML.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Sampler.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Semaphore.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/SharedPtr.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Sphere.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Sphere.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Streams.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Strings.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Thread.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Timer.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Types.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Types.inl"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Util.h"
-    "/home/finley/CODE/MVS/openMVS/libs/Common/Util.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AABB.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AABB.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AutoEstimator.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AutoPtr.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Config.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CriticalSection.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/FastDelegate.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/FastDelegateBind.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/FastDelegateCPP11.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/File.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Filters.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/HTMLDoc.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/HalfFloat.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Hash.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/LinkLib.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/List.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/MemFile.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/OBB.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/OBB.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Octree.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Octree.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Plane.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Plane.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Queue.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Random.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Ray.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Ray.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Rotation.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Rotation.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Sampler.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Semaphore.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SharedPtr.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Sphere.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Sphere.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Streams.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Strings.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Thread.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.inl"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.inl"
     )
 endif()
 

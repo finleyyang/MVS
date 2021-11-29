@@ -4,7 +4,7 @@ if("${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}" LESS 2.5)
    message(FATAL_ERROR "CMake >= 2.6.0 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.6...3.18)
+cmake_policy(VERSION 2.6...3.17)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -45,14 +45,14 @@ unset(_expectedTargets)
 add_library(Common STATIC IMPORTED)
 
 set_target_properties(Common PROPERTIES
-  INTERFACE_LINK_LIBRARIES "/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio"
+  INTERFACE_LINK_LIBRARIES "Boost::iostreams;Boost::program_options;Boost::system;Boost::serialization;opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_barcode;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_sfm;opencv_shape;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_viz;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto"
 )
 
 # Create imported target IO
 add_library(IO STATIC IMPORTED)
 
 set_target_properties(IO PROPERTIES
-  INTERFACE_LINK_LIBRARIES "MVS;Common;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libtiff.so"
+  INTERFACE_LINK_LIBRARIES "MVS;Common;/usr/local/lib/libpng.dylib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libz.tbd;/usr/local/lib/libjpeg.dylib;/usr/local/lib/libtiff.dylib"
 )
 
 # Create imported target Math
@@ -66,35 +66,35 @@ set_target_properties(Math PROPERTIES
 add_library(MVS STATIC IMPORTED)
 
 set_target_properties(MVS PROPERTIES
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Common>;\$<LINK_ONLY:Math>;\$<LINK_ONLY:IO>;/usr/lib/x86_64-linux-gnu/libCGAL.so.13.0.1;/usr/lib/x86_64-linux-gnu/libmpfr.so;/usr/lib/x86_64-linux-gnu/libgmp.so"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Common>;\$<LINK_ONLY:Math>;\$<LINK_ONLY:IO>;\$<LINK_ONLY:CGAL>;/usr/local/lib/libgmpxx.dylib;/usr/local/lib/libmpfr.dylib;/usr/local/lib/libgmp.dylib;\$<LINK_ONLY:Boost::boost>;/usr/local/lib/libmpfr.dylib;/usr/local/lib/libgmp.dylib"
 )
 
 # Import target "Common" for configuration "Release"
 set_property(TARGET Common APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Common PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/finley/CODE/MVS/openMVS_build_clion/lib/libCommon.a"
+  IMPORTED_LOCATION_RELEASE "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libCommon.a"
   )
 
 # Import target "IO" for configuration "Release"
 set_property(TARGET IO APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(IO PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/finley/CODE/MVS/openMVS_build_clion/lib/libIO.a"
+  IMPORTED_LOCATION_RELEASE "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libIO.a"
   )
 
 # Import target "Math" for configuration "Release"
 set_property(TARGET Math APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Math PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/finley/CODE/MVS/openMVS_build_clion/lib/libMath.a"
+  IMPORTED_LOCATION_RELEASE "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libMath.a"
   )
 
 # Import target "MVS" for configuration "Release"
 set_property(TARGET MVS APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(MVS PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/finley/CODE/MVS/openMVS_build_clion/lib/libMVS.a"
+  IMPORTED_LOCATION_RELEASE "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libMVS.a"
   )
 
 # This file does not depend on other imported targets which have

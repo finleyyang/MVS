@@ -1,4 +1,4 @@
-# Install script for directory: /home/finley/CODE/MVS/openMVS/apps
+# Install script for directory: /Users/finley/Desktop/course/CODE/MVS/openMVS/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,11 +27,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,18 +34,18 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/apps/RefineMesh/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/apps/TextureMesh/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/apps/Viewer/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceCOLMAP/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/InterfaceVisualSFM/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/DensifyPointCloud/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/ReconstructMesh/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/RefineMesh/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/cmake_install.cmake")
 
 endif()
 

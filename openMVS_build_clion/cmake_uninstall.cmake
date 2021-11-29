@@ -1,14 +1,14 @@
-if(NOT EXISTS "/home/finley/CODE/MVS/openMVS_build_clion/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /home/finley/CODE/MVS/openMVS_build_clion/install_manifest.txt")
-endif(NOT EXISTS "/home/finley/CODE/MVS/openMVS_build_clion/install_manifest.txt")
+if(NOT EXISTS "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/install_manifest.txt")
+endif(NOT EXISTS "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/install_manifest.txt")
 
-file(READ "/home/finley/CODE/MVS/openMVS_build_clion/install_manifest.txt" files)
+file(READ "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")
   if(IS_SYMLINK "$ENV{DESTDIR}${file}" OR EXISTS "$ENV{DESTDIR}${file}")
     exec_program(
-      "/home/finley/Downloads/clion-2021.2.3/bin/cmake/linux/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )

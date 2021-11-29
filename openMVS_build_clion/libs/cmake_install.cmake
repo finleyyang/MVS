@@ -1,4 +1,4 @@
-# Install script for directory: /home/finley/CODE/MVS/openMVS/libs
+# Install script for directory: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,11 +27,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -51,15 +46,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/OpenMVS" TYPE FILE FILES "/home/finley/CODE/MVS/openMVS/libs/MVS.h")
+file(INSTALL DESTINATION "/usr/local/include/OpenMVS" TYPE FILE FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS.h")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/finley/CODE/MVS/openMVS_build_clion/libs/Common/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/libs/Math/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/libs/MVS/cmake_install.cmake")
-  include("/home/finley/CODE/MVS/openMVS_build_clion/libs/IO/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cmake_install.cmake")
+  include("/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cmake_install.cmake")
 
 endif()
 
