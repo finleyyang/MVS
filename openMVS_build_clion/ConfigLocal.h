@@ -16,7 +16,7 @@
 #define _HAS_RTTI 1
 
 // OpenMP support
-#define _USE_OPENMP
+/* #undef _USE_OPENMP */
 
 // BREAKPAD support
 /* #undef _USE_BREAKPAD */

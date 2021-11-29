@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Math.dir/LMFit/lmmin.cpp.o"
   "cotire/Math_CXX_prefix.cxx"
   "cotire/Math_CXX_prefix.hxx"
-  "cotire/Math_CXX_prefix.hxx.gch"
+  "cotire/Math_CXX_prefix.hxx.pch"
 )
 
 # Per-language clean rules from dependency scanning.

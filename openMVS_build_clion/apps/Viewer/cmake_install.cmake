@@ -1,4 +1,4 @@
-# Install script for directory: /home/finley/CODE/MVS/openMVS/apps/Viewer
+# Install script for directory: /Users/finley/Desktop/course/CODE/MVS/openMVS/apps/Viewer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,11 +27,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,16 +34,10 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer"
-         RPATH "")
-  endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/usr/local/bin/OpenMVS/Viewer")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -57,15 +46,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/bin/OpenMVS" TYPE EXECUTABLE FILES "/home/finley/CODE/MVS/openMVS_build_clion/bin/Viewer")
+file(INSTALL DESTINATION "/usr/local/bin/OpenMVS" TYPE EXECUTABLE FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/Viewer")
   if(EXISTS "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer"
-         OLD_RPATH "/usr/local/lib:"
-         NEW_RPATH "")
+    execute_process(COMMAND /usr/bin/install_name_tool
+      -delete_rpath "/usr/local/lib"
+      "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}/usr/local/bin/OpenMVS/Viewer")
     endif()
   endif()
 endif()

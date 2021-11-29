@@ -6,7 +6,7 @@
  
 # Compute paths
 get_filename_component(OpenMVS_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
-set(OpenMVS_INCLUDE_DIRS "/home/finley/CODE/MVS/openMVS;/home/finley/CODE/MVS/openMVS_build_clion")
+set(OpenMVS_INCLUDE_DIRS "/Users/finley/Desktop/course/CODE/MVS/openMVS;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion")
  
 # Our library dependencies (contains definitions for IMPORTED targets)
 if(NOT TARGET MVS AND NOT OpenMVS_BINARY_DIR)

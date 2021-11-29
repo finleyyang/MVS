@@ -1,4 +1,4 @@
-# Install script for directory: /home/finley/CODE/MVS/openMVS/libs/IO
+# Install script for directory: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,11 +27,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -51,7 +46,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/OpenMVS" TYPE STATIC_LIBRARY FILES "/home/finley/CODE/MVS/openMVS_build_clion/lib/libIO.a")
+file(INSTALL DESTINATION "/usr/local/lib/OpenMVS" TYPE STATIC_LIBRARY FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libIO.a")
+  if(EXISTS "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libIO.a" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libIO.a")
+    execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libIO.a")
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -64,18 +63,18 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONEN
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local/include/OpenMVS/IO" TYPE FILE FILES
-    "/home/finley/CODE/MVS/openMVS/libs/IO/Common.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/Image.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/ImageBMP.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/ImageDDS.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/ImageJPG.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/ImagePNG.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/ImageSCI.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/ImageTGA.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/ImageTIFF.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/OBJ.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/PLY.h"
-    "/home/finley/CODE/MVS/openMVS/libs/IO/read_pose.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Common.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Image.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageBMP.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageDDS.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageJPG.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImagePNG.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageSCI.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTGA.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTIFF.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/OBJ.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/PLY.h"
+    "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/read_pose.h"
     )
 endif()
 
