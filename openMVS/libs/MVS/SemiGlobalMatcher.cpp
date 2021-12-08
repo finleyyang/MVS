@@ -1113,6 +1113,7 @@ void SemiGlobalMatcher::Match(const ViewData& leftImage, const ViewData& rightIm
 		// 计算Lp与Ls重合的视差范围
         // 两个像素的最小视差取其中的最大值
         // 两个像素的最大视差取其中的最小值
+        // Lp存储的是路径上上一个像素的数据，Ls为当前像素的范围
 		const Disparity minDisp(MAXF(Lp.R.minDisp, Ls.R.minDisp));
 		const Disparity maxDisp(MINF(Lp.R.maxDisp, Ls.R.maxDisp));
 		
@@ -1136,6 +1137,7 @@ void SemiGlobalMatcher::Match(const ViewData& leftImage, const ViewData& rightIm
 			// 计算聚合路径在重合视差范围内的最小代价
 
             // 遍历Lp视差重合范围内的代价的最小值是多少，存在minLp中， 作用是公式6中减去的那一项
+            // 路径上上一个像素点的代价最小值
 			for (const AccumCost *L=Lp.L+(minDisp-Lp.R.minDisp), *endL=L+(maxDisp-minDisp); L<endL; ++L)
 				Compute::MINS(minLp, *L);
 			for (Disparity d=Ls.R.minDisp; d<Ls.R.maxDisp; ++d) {
@@ -1319,6 +1321,8 @@ void SemiGlobalMatcher::Match(const ViewData& leftImage, const ViewData& rightIm
 	//8聚合路径
     // dirs[]={左边， 上面， 左上， 右上}
 	const ImageRef dirs[] = {{-1,0}, {0,-1}, {-1,-1}, {1,-1}};
+
+
 	struct AccumLines {
 		const Disparity maxNumDisp; // int16
 		LineData* linesBuffer;
@@ -1356,6 +1360,8 @@ void SemiGlobalMatcher::Match(const ViewData& leftImage, const ViewData& rightIm
 		const LineData& operator() (int idxDir, int r, int c) const { return lines[idxDir][r][c]; }
 		LineData& operator() (int idxDir, int r, int c) { return lines[idxDir][r][c]; }
 	};
+
+
 	AccumLines lines(maxNumDisp);
         //当前点的像素坐标， r是多少行， c是该行哪一个
         //pixel存储的是该像素的视差范围
