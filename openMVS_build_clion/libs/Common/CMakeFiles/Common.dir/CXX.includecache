@@ -14,19 +14,9 @@ AABB.inl
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AutoPtr.h
 
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-CUDA.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.h
-
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.h
 cuda.h
 -
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
 Config.h
@@ -42,12 +32,6 @@ crtdbg.h
 assert.h
 -
 
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-ConfigTable.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.h
-
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.h
 SML.h
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.h
@@ -55,12 +39,6 @@ SML.h
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CriticalSection.h
 Thread.h
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Thread.h
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-EventQueue.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.h
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.h
 Types.h
@@ -116,18 +94,6 @@ dlfcn.h
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/List.h
 
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-Log.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.h
-io.h
--
-unistd.h
--
-fcntl.h
--
-
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.h
 CriticalSection.h
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CriticalSection.h
@@ -173,12 +139,6 @@ Rotation.inl
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Rotation.inl
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Rotation.inl
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-SML.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.h
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.h
 Filters.h
@@ -228,19 +188,7 @@ sys/resource.h
 unistd.h
 -
 
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-Timer.h
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.h
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.h
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-Types.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.h
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.h
 windows.h
@@ -490,30 +438,6 @@ breakpad/client/windows/crash_generation/crash_generation_server.h
 breakpad/client/windows/handler/exception_handler.h
 -
 breakpad/client/windows/common/ipc_protocol.h
--
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-Util.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.h
-Shlobj.h
--
-VersionHelpers.h
--
-sys/utsname.h
--
-sys/sysctl.h
--
-sys/sysinfo.h
--
-pwd.h
--
-intrin.h
--
-cpuid.h
--
-Psapi.h
 -
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.h
@@ -13379,4 +13303,10 @@ IndexedViewMethods.h
 /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
 ReshapedMethods.h
 /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
+
+/usr/local/include/omp.h
+stdlib.h
+-
+stdint.h
+-
 

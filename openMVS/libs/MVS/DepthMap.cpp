@@ -261,7 +261,7 @@ unsigned DepthData::DecRef()
 //  1 2 4 7 5 3 6 8 9 -->  4 5 6
 //                         7 8 9
 //                                  1 2 4 7
-//!!! 之字形 1 2 4 7 5 3 6 8 9 -->  3 5 8
+//!!! 之字形 1 2 4 7 5 3 6 8 9 -->   3 5 8
 //                                  6 9
 void DepthEstimator::MapMatrix2ZigzagIdx(const Image8U::Size& size, DepthEstimator::MapRefArr& coords, const BitMatrix& mask, int rawStride)
 {

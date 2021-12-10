@@ -1,0 +1,20 @@
+17:47:54 [App     ] Build date: Dec  9 2021, 17:34:01
+17:47:54 [App     ] CPU: Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz (8 cores)
+17:47:54 [App     ] RAM: 8.00GB Physical Memory 8.00GB Virtual Memory
+17:47:54 [App     ] OS: Darwin 21.1.0 (x86_64)
+17:47:54 [App     ] SSE & AVX compatible CPU & OS detected
+17:47:54 [App     ] Command line: -w ../data/openMVS_sample -i test_dense_mac.mvs -o test_mesh_mac.mvs
+17:47:55 [App     ] Scene loaded (1s308ms):
+	11 images (11 calibrated) with a total of 15.81 MPixels (1.44 MPixels/image)
+	1432231 points, 0 vertices, 0 faces
+17:48:03 [App     ] Delaunay tetrahedralization completed: 1432231 points -> 513389 vertices, 3281036 (+256) cells, 6562200 (+384) faces (8s35ms)
+17:48:15 [App     ] Delaunay tetrahedras weighting completed: 3281292 cells, 6562584 faces (12s146ms)
+17:48:22 [App     ] Delaunay tetrahedras graph-cut completed (293970 flow): 499201 vertices, 998725 faces (6s807ms)
+17:48:32 [App     ] Mesh reconstruction completed: 499278 vertices, 998543 faces (37s28ms)
+17:48:36 [App     ] Cleaned mesh: 498224 vertices, 995930 faces (4s291ms)
+17:48:39 [App     ] Cleaned mesh: 498227 vertices, 995946 faces (2s806ms)
+17:48:40 [App     ] Cleaned mesh: 498227 vertices, 995946 faces (1s279ms)
+17:48:41 [App     ] Scene saved (695ms):
+	11 images (11 calibrated)
+	0 points, 498227 vertices, 995946 faces
+17:48:41 [App     ] Mesh saved: 498227 vertices, 995946 faces (92ms)

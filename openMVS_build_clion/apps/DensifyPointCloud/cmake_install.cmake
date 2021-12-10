@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/bin/OpenMVS" TYPE EXECUTABLE FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/DensifyPointCloud")
+  file(INSTALL DESTINATION "/usr/local/bin/OpenMVS" TYPE EXECUTABLE FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/bin/DensifyPointCloud")
   if(EXISTS "$ENV{DESTDIR}/usr/local/bin/OpenMVS/DensifyPointCloud" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/bin/OpenMVS/DensifyPointCloud")
     execute_process(COMMAND /usr/bin/install_name_tool

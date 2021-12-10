@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/OpenMVS" TYPE STATIC_LIBRARY FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libCommon.a")
+  file(INSTALL DESTINATION "/usr/local/lib/OpenMVS" TYPE STATIC_LIBRARY FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libCommon.a")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libCommon.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libCommon.a")
     execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}/usr/local/lib/OpenMVS/libCommon.a")
@@ -62,7 +62,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/OpenMVS/Common" TYPE FILE FILES
+  file(INSTALL DESTINATION "/usr/local/include/OpenMVS/Common" TYPE FILE FILES
     "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AABB.h"
     "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AABB.inl"
     "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/AutoEstimator.h"

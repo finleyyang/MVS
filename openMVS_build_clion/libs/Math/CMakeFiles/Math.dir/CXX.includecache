@@ -450,35 +450,9 @@ dirent.h
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.inl
 
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.h
-
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.h
 ../Common/Common.h
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/Common.h
-IBFS.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.h
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.h
-stdio.h
--
-string.h
--
-assert.h
--
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp
-Common.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/Common.h
-lmmin.h
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.h
-
-/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.h
 
 /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.cxx
 /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.h
@@ -13333,4 +13307,10 @@ IndexedViewMethods.h
 /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
 ReshapedMethods.h
 /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
+
+/usr/local/include/omp.h
+stdlib.h
+-
+stdint.h
+-
 

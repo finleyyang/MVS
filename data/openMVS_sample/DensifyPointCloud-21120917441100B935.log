@@ -1,0 +1,51 @@
+17:44:11 [App     ] Build date: Dec  9 2021, 17:41:29
+17:44:11 [App     ] CPU: Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz (8 cores)
+17:44:11 [App     ] RAM: 8.00GB Physical Memory 8.00GB Virtual Memory
+17:44:11 [App     ] OS: Darwin 21.1.0 (x86_64)
+17:44:11 [App     ] SSE & AVX compatible CPU & OS detected
+17:44:11 [App     ] Command line: -w ../data/openMVS_sample -i scene.mvs -o test_dense_mac.mvs
+17:44:12 [App     ] Camera model loaded: platform 0; camera  0; f 1.054x1.054; poses 11
+17:44:12 [App     ] Image loaded   0: 00000.jpg
+17:44:12 [App     ] Image loaded   1: 00001.jpg
+17:44:12 [App     ] Image loaded   2: 00002.jpg
+17:44:12 [App     ] Image loaded   3: 00003.jpg
+17:44:12 [App     ] Image loaded   4: 00004.jpg
+17:44:12 [App     ] Image loaded   5: 00005.jpg
+17:44:12 [App     ] Image loaded   6: 00006.jpg
+17:44:12 [App     ] Image loaded   7: 00007.jpg
+17:44:12 [App     ] Image loaded   8: 00008.jpg
+17:44:12 [App     ] Image loaded   9: 00009.jpg
+17:44:12 [App     ] Image loaded  10: 00010.jpg
+17:44:12 [App     ] Scene loaded from interface format (13ms):
+	11 images (11 calibrated) with a total of 63.22 MPixels (5.75 MPixels/image)
+	12683 points, 0 vertices, 0 faces
+17:44:12 [App     ] Preparing images for dense reconstruction completed: 11 images (361ms)
+17:44:12 [App     ] Selecting images for dense reconstruction completed: 11 images (7ms)
+17:44:12 [App     ] Reference image   0 paired with 4 views
+17:44:12 [App     ] Reference image   7 paired with 4 views
+17:44:12 [App     ] Reference image  10 paired with 4 views
+17:44:12 [App     ] Reference image   9 paired with 4 views
+17:44:12 [App     ] Reference image   2 paired with 4 views
+17:44:12 [App     ] Reference image   8 paired with 4 views
+17:44:13 [App     ] Reference image   6 paired with 4 views
+17:44:13 [App     ] Reference image   4 paired with 4 views
+17:44:13 [App     ] Reference image   5 paired with 4 views
+17:44:13 [App     ] Reference image   3 paired with 4 views
+17:44:13 [App     ] Reference image   1 paired with 4 views
+17:44:15 [App     ] Depth map   4 filtered using 8 other images: 10597/706070 depths discarded (1s378ms)
+17:44:15 [App     ] Depth map   2 filtered using 8 other images: 16238/720901 depths discarded (1s436ms)
+17:44:15 [App     ] Depth map   7 filtered using 8 other images: 6786/794674 depths discarded (1s451ms)
+17:44:15 [App     ] Depth map   7 filtered using 8 other images: 6786/794674 depths discarded (1s451ms)
+17:44:15 [App     ] Depth map   0 filtered using 8 other images: 10807/698518 depths discarded (1s459ms)
+17:44:15 [App     ] Depth map   6 filtered using 8 other images: 11354/727096 depths discarded (1s483ms)
+17:44:15 [App     ] Depth map   9 filtered using 8 other images: 15222/891512 depths discarded (1s549ms)
+17:44:15 [App     ] Depth map   8 filtered using 8 other images: 10210/901158 depths discarded (1s558ms)
+17:44:15 [App     ] Depth map   5 filtered using 8 other images: 8035/701746 depths discarded (730ms)
+17:44:15 [App     ] Depth map   3 filtered using 8 other images: 18132/736739 depths discarded (695ms)
+17:44:15 [App     ] Depth map   1 filtered using 8 other images: 13551/747395 depths discarded (684ms)
+17:44:19 [App     ] Depth-maps fused and filtered: 11 depth-maps, 7601369 depths, 1432231 points (19%%) (2s47ms)
+17:44:19 [App     ] Densifying point-cloud completed: 1432231 points (7s308ms)
+17:44:21 [App     ] Scene saved (2s126ms):
+	11 images (11 calibrated)
+	1432231 points, 0 vertices, 0 faces
+17:44:21 [App     ] Point-cloud saved: 1432231 points (189ms)

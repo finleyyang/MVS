@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include/OpenMVS" TYPE FILE FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS.h")
+  file(INSTALL DESTINATION "/usr/local/include/OpenMVS" TYPE FILE FILES "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS.h")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

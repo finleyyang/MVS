@@ -1,21 +1,13 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Common.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/Common.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Image.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/Image.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageBMP.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/ImageBMP.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageDDS.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/ImageDDS.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageJPG.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/ImageJPG.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImagePNG.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/ImagePNG.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageSCI.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/ImageSCI.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTGA.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/ImageTGA.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTIFF.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/ImageTIFF.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/OBJ.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/OBJ.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/PLY.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/PLY.cpp.o"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/read_pose.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/CMakeFiles/IO.dir/read_pose.cpp.o"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.pch"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
@@ -35,6 +27,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "_USE_JPG"
   "_USE_NONFREE"
   "_USE_OPENGL"
+  "_USE_OPENMP"
   "_USE_PNG"
   "_USE_SSE"
   "_USE_TIFF"
@@ -48,6 +41,22 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/.."
   "/usr/local/include"
   "/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Common.cpp" "libs/IO/CMakeFiles/IO.dir/Common.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/Common.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/Image.cpp" "libs/IO/CMakeFiles/IO.dir/Image.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/Image.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageBMP.cpp" "libs/IO/CMakeFiles/IO.dir/ImageBMP.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/ImageBMP.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageDDS.cpp" "libs/IO/CMakeFiles/IO.dir/ImageDDS.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/ImageDDS.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageJPG.cpp" "libs/IO/CMakeFiles/IO.dir/ImageJPG.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/ImageJPG.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImagePNG.cpp" "libs/IO/CMakeFiles/IO.dir/ImagePNG.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/ImagePNG.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageSCI.cpp" "libs/IO/CMakeFiles/IO.dir/ImageSCI.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/ImageSCI.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTGA.cpp" "libs/IO/CMakeFiles/IO.dir/ImageTGA.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/ImageTGA.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/ImageTIFF.cpp" "libs/IO/CMakeFiles/IO.dir/ImageTIFF.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/ImageTIFF.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/OBJ.cpp" "libs/IO/CMakeFiles/IO.dir/OBJ.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/OBJ.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/PLY.cpp" "libs/IO/CMakeFiles/IO.dir/PLY.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/PLY.cpp.o.d"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/read_pose.cpp" "libs/IO/CMakeFiles/IO.dir/read_pose.cpp.o" "gcc" "libs/IO/CMakeFiles/IO.dir/read_pose.cpp.o.d"
   )
 
 # Targets to which this target links.
