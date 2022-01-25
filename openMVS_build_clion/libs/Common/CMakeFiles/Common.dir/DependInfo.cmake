@@ -8,7 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.pch"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/CUDA.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Common.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Log.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/SML.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Timer.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Types.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -33,7 +41,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Users/finley/Desktop/course/CODE/MVS/openMVS"
-  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"
+  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"
   "/usr/local/include/eigen3"
   "/usr/local/include"
   "/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"
@@ -41,15 +49,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.cpp" "libs/Common/CMakeFiles/Common.dir/CUDA.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/CUDA.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.cpp" "libs/Common/CMakeFiles/Common.dir/Common.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/Common.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.cpp" "libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.cpp" "libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.cpp" "libs/Common/CMakeFiles/Common.dir/Log.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/Log.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.cpp" "libs/Common/CMakeFiles/Common.dir/SML.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/SML.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.cpp" "libs/Common/CMakeFiles/Common.dir/Timer.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/Timer.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.cpp" "libs/Common/CMakeFiles/Common.dir/Types.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/Types.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.cpp" "libs/Common/CMakeFiles/Common.dir/Util.cpp.o" "gcc" "libs/Common/CMakeFiles/Common.dir/Util.cpp.o.d"
   )
 
 # Targets to which this target links.

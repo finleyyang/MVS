@@ -162,20 +162,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-apps/Viewer/CMakeFiles/Viewer_pch.dir/rule:
-	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/Viewer/CMakeFiles/Viewer_pch.dir/rule
-.PHONY : apps/Viewer/CMakeFiles/Viewer_pch.dir/rule
-
-# Convenience name for target.
-Viewer_pch: apps/Viewer/CMakeFiles/Viewer_pch.dir/rule
-.PHONY : Viewer_pch
-
-# fast build rule for target.
-Viewer_pch/fast:
-	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer_pch.dir/build.make apps/Viewer/CMakeFiles/Viewer_pch.dir/build
-.PHONY : Viewer_pch/fast
-
-# Convenience name for target.
 apps/Viewer/CMakeFiles/Viewer.dir/rule:
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/Viewer/CMakeFiles/Viewer.dir/rule
 .PHONY : apps/Viewer/CMakeFiles/Viewer.dir/rule
@@ -345,7 +331,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Viewer_pch"
 	@echo "... Viewer"
 	@echo "... Camera.o"
 	@echo "... Camera.i"

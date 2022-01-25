@@ -162,20 +162,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-libs/Math/CMakeFiles/Math_pch.dir/rule:
-	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Math/CMakeFiles/Math_pch.dir/rule
-.PHONY : libs/Math/CMakeFiles/Math_pch.dir/rule
-
-# Convenience name for target.
-Math_pch: libs/Math/CMakeFiles/Math_pch.dir/rule
-.PHONY : Math_pch
-
-# fast build rule for target.
-Math_pch/fast:
-	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math_pch.dir/build.make libs/Math/CMakeFiles/Math_pch.dir/build
-.PHONY : Math_pch/fast
-
-# Convenience name for target.
 libs/Math/CMakeFiles/Math.dir/rule:
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Math/CMakeFiles/Math.dir/rule
 .PHONY : libs/Math/CMakeFiles/Math.dir/rule
@@ -273,7 +259,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Math_pch"
 	@echo "... Math"
 	@echo "... Common.o"
 	@echo "... Common.i"

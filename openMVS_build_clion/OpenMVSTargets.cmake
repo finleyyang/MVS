@@ -52,7 +52,7 @@ set_target_properties(Common PROPERTIES
 add_library(IO STATIC IMPORTED)
 
 set_target_properties(IO PROPERTIES
-  INTERFACE_LINK_LIBRARIES "MVS;Common;/usr/local/lib/libpng.dylib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/lib/libz.tbd;/usr/local/lib/libjpeg.dylib;/usr/local/lib/libtiff.dylib"
+  INTERFACE_LINK_LIBRARIES "MVS;Common;/usr/local/lib/libpng.dylib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libz.tbd;/usr/local/lib/libjpeg.dylib;/usr/local/lib/libtiff.dylib"
 )
 
 # Create imported target Math

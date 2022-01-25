@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.pch"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/Common.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -33,7 +35,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Users/finley/Desktop/course/CODE/MVS/openMVS"
-  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"
+  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"
   "/usr/local/include/eigen3"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/."
   "/usr/local/include"
@@ -42,9 +44,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.cpp" "libs/Math/CMakeFiles/Math.dir/Common.cpp.o" "gcc" "libs/Math/CMakeFiles/Math.dir/Common.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp" "libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o" "gcc" "libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o.d"
-  "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp" "libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o" "gcc" "libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o.d"
   )
 
 # Targets to which this target links.

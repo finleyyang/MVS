@@ -87,36 +87,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="clean_cotire">
-				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean_cotire"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Common_pch">
-				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 Common_pch"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="all_pch">
-				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 all_pch"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Common">
 				<Option output="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/lib/libCommon.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common"/>
@@ -139,7 +109,7 @@
 					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
 					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -178,7 +148,7 @@
 					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
 					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -193,16 +163,6 @@
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Math_pch">
-				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 Math_pch"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Math">
@@ -227,7 +187,7 @@
 					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
 					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/."/>
 					<Add directory="/usr/local/include"/>
@@ -267,7 +227,7 @@
 					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
 					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/."/>
 					<Add directory="/usr/local/include"/>
@@ -283,16 +243,6 @@
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="MVS_pch">
-				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 MVS_pch"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MVS">
@@ -318,7 +268,7 @@
 					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
 					<Add option="-DCGAL_USE_GMPXX=1"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/vcglib"/>
 					<Add directory="/usr/local/include"/>
@@ -359,7 +309,7 @@
 					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
 					<Add option="-DCGAL_USE_GMPXX=1"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/vcglib"/>
 					<Add directory="/usr/local/include"/>
@@ -375,16 +325,6 @@
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="IO_pch">
-				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 IO_pch"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="IO">
@@ -412,7 +352,7 @@
 					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
 					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/.."/>
 					<Add directory="/usr/local/include"/>
@@ -455,7 +395,7 @@
 					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
 					<Add option="-DBOOST_SERIALIZATION_DYN_LINK"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/IO/.."/>
 					<Add directory="/usr/local/include"/>
@@ -489,7 +429,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -522,7 +462,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -555,7 +495,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -588,7 +528,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -621,7 +561,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -654,7 +594,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -687,7 +627,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -720,7 +660,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -753,7 +693,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -786,7 +726,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -819,7 +759,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -852,7 +792,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
@@ -867,16 +807,6 @@
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/TextureMesh/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Viewer_pch">
-				<Option working_dir="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 Viewer_pch"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Viewer">
@@ -895,7 +825,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
 					<Add directory="/usr/local/include"/>
@@ -928,7 +858,7 @@
 					<Add option="-D_USE_FAST_CBRT"/>
 					<Add option="-D_USE_SSE"/>
 					<Add directory="/Users/finley/Desktop/course/CODE/MVS/openMVS"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"/>
 					<Add directory="/usr/local/include"/>
@@ -1393,56 +1323,8 @@
 		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/TRWS/typeTruncatedQuadratic2D.h">
 			<Option target="Math"/>
 		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.cxx.rule">
-			<Option target="Viewer"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.hxx.pch.rule">
-			<Option target="Viewer"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/apps/Viewer/cotire/Viewer_CXX_prefix.hxx.rule">
-			<Option target="Viewer"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.cxx.rule">
-			<Option target="Common"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.pch.rule">
-			<Option target="Common"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.rule">
-			<Option target="Common"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.cxx.rule">
-			<Option target="IO"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.pch.rule">
-			<Option target="IO"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/IO/cotire/IO_CXX_prefix.hxx.rule">
-			<Option target="IO"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.cxx.rule">
-			<Option target="MVS"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.pch.rule">
-			<Option target="MVS"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.rule">
-			<Option target="MVS"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.cxx.rule">
-			<Option target="Math"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.pch.rule">
-			<Option target="Math"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.rule">
-			<Option target="Math"/>
-		</Unit>
 		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/Cotire.cmake">
-			<Option virtualFolder="CMake Files\build\"/>
 		</Unit>
 		<Unit filename="/Users/finley/Desktop/course/CODE/MVS/openMVS/build/OpenMVSConfig.cmake.in">
 			<Option virtualFolder="CMake Files\build\"/>

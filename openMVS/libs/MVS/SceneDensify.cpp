@@ -1072,6 +1072,7 @@ bool DepthMapsData::FilterDepthMap(DepthData& depthDataRef, const IIndexArr& idx
 	const Camera& cameraRef = imageRef.camera;
 	DepthMapArr depthMaps(N);// N个邻域投影在当前帧的深度图
 	ConfidenceMapArr confMaps(N);// 同上置信度
+    //N个邻域投影到当前帧的深度图
 	FOREACH(n, depthMaps) {
 		DepthMap& depthMap = depthMaps[n];
 		depthMap.create(sizeRef);
