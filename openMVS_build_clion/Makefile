@@ -175,6 +175,45 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
+# Target rules for targets named clean_cotire
+
+# Build rule for target.
+clean_cotire: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean_cotire
+.PHONY : clean_cotire
+
+# fast build rule for target.
+clean_cotire/fast:
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/clean_cotire.dir/build.make libs/Common/CMakeFiles/clean_cotire.dir/build
+.PHONY : clean_cotire/fast
+
+#=============================================================================
+# Target rules for targets named Common_pch
+
+# Build rule for target.
+Common_pch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Common_pch
+.PHONY : Common_pch
+
+# fast build rule for target.
+Common_pch/fast:
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common_pch.dir/build.make libs/Common/CMakeFiles/Common_pch.dir/build
+.PHONY : Common_pch/fast
+
+#=============================================================================
+# Target rules for targets named all_pch
+
+# Build rule for target.
+all_pch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_pch
+.PHONY : all_pch
+
+# fast build rule for target.
+all_pch/fast:
+	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/all_pch.dir/build.make libs/Common/CMakeFiles/all_pch.dir/build
+.PHONY : all_pch/fast
+
+#=============================================================================
 # Target rules for targets named Common
 
 # Build rule for target.
@@ -186,6 +225,19 @@ Common: cmake_check_build_system
 Common/fast:
 	$(MAKE) $(MAKESILENT) -f libs/Common/CMakeFiles/Common.dir/build.make libs/Common/CMakeFiles/Common.dir/build
 .PHONY : Common/fast
+
+#=============================================================================
+# Target rules for targets named Math_pch
+
+# Build rule for target.
+Math_pch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Math_pch
+.PHONY : Math_pch
+
+# fast build rule for target.
+Math_pch/fast:
+	$(MAKE) $(MAKESILENT) -f libs/Math/CMakeFiles/Math_pch.dir/build.make libs/Math/CMakeFiles/Math_pch.dir/build
+.PHONY : Math_pch/fast
 
 #=============================================================================
 # Target rules for targets named Math
@@ -201,6 +253,19 @@ Math/fast:
 .PHONY : Math/fast
 
 #=============================================================================
+# Target rules for targets named MVS_pch
+
+# Build rule for target.
+MVS_pch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MVS_pch
+.PHONY : MVS_pch
+
+# fast build rule for target.
+MVS_pch/fast:
+	$(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS_pch.dir/build.make libs/MVS/CMakeFiles/MVS_pch.dir/build
+.PHONY : MVS_pch/fast
+
+#=============================================================================
 # Target rules for targets named MVS
 
 # Build rule for target.
@@ -212,6 +277,19 @@ MVS: cmake_check_build_system
 MVS/fast:
 	$(MAKE) $(MAKESILENT) -f libs/MVS/CMakeFiles/MVS.dir/build.make libs/MVS/CMakeFiles/MVS.dir/build
 .PHONY : MVS/fast
+
+#=============================================================================
+# Target rules for targets named IO_pch
+
+# Build rule for target.
+IO_pch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IO_pch
+.PHONY : IO_pch
+
+# fast build rule for target.
+IO_pch/fast:
+	$(MAKE) $(MAKESILENT) -f libs/IO/CMakeFiles/IO_pch.dir/build.make libs/IO/CMakeFiles/IO_pch.dir/build
+.PHONY : IO_pch/fast
 
 #=============================================================================
 # Target rules for targets named IO
@@ -305,6 +383,19 @@ TextureMesh/fast:
 .PHONY : TextureMesh/fast
 
 #=============================================================================
+# Target rules for targets named Viewer_pch
+
+# Build rule for target.
+Viewer_pch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Viewer_pch
+.PHONY : Viewer_pch
+
+# fast build rule for target.
+Viewer_pch/fast:
+	$(MAKE) $(MAKESILENT) -f apps/Viewer/CMakeFiles/Viewer_pch.dir/build.make apps/Viewer/CMakeFiles/Viewer_pch.dir/build
+.PHONY : Viewer_pch/fast
+
+#=============================================================================
 # Target rules for targets named Viewer
 
 # Build rule for target.
@@ -329,6 +420,13 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... Common_pch"
+	@echo "... IO_pch"
+	@echo "... MVS_pch"
+	@echo "... Math_pch"
+	@echo "... Viewer_pch"
+	@echo "... all_pch"
+	@echo "... clean_cotire"
 	@echo "... uninstall"
 	@echo "... Common"
 	@echo "... DensifyPointCloud"

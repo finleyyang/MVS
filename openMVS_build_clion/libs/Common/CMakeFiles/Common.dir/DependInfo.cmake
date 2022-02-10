@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Timer.cpp.o"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Types.cpp.o"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/Util.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.pch"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -44,7 +45,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"
   "/usr/local/include/eigen3"
   "/usr/local/include"
-  "/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"
+  "/usr/local/Cellar/opencv/4.5.4_4/include/opencv4"
   )
 
 # The set of dependency files which are needed:

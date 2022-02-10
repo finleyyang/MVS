@@ -30,7 +30,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework"
   "/usr/local/include"
   "/usr/local/include/eigen3"
-  "/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"
+  "/usr/local/Cellar/opencv/4.5.4_4/include/opencv4"
   )
 
 # The set of dependency files which are needed:

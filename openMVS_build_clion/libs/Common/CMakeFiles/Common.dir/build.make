@@ -66,9 +66,24 @@ include libs/Common/CMakeFiles/Common.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/Common/CMakeFiles/Common.dir/flags.make
 
+libs/Common/cotire/Common_CXX_prefix.hxx.pch: libs/Common/cotire/Common_CXX_prefix.hxx
+libs/Common/cotire/Common_CXX_prefix.hxx.pch: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+libs/Common/cotire/Common_CXX_prefix.hxx.pch: libs/Common/cotire/Common_CXX_prefix.hxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX precompiled header libs/Common/cotire/Common_CXX_prefix.hxx.pch"
+	cd /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /Users/finley/Desktop/course/CODE/MVS/openMVS/build/Cotire.cmake precompile /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Common_CXX_Cotire.cmake /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx.pch /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.cpp
+
+libs/Common/cotire/Common_CXX_prefix.hxx: libs/Common/cotire/Common_CXX_prefix.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating CXX prefix header libs/Common/cotire/Common_CXX_prefix.hxx"
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /Users/finley/Desktop/course/CODE/MVS/openMVS/build/Cotire.cmake combine /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Common_CXX_Cotire.cmake /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.hxx /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.cxx
+
+libs/Common/cotire/Common_CXX_prefix.cxx: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating CXX prefix source libs/Common/cotire/Common_CXX_prefix.cxx"
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /Users/finley/Desktop/course/CODE/MVS/openMVS/build/Cotire.cmake combine /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/Common_CXX_Cotire.cmake /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/cotire/Common_CXX_prefix.cxx /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.h
+
 libs/Common/CMakeFiles/Common.dir/Common.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/Common.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/Common/CMakeFiles/Common.dir/Common.cpp.o"
+libs/Common/CMakeFiles/Common.dir/Common.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/Common/CMakeFiles/Common.dir/Common.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/Common.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Common.cpp
 
 libs/Common/CMakeFiles/Common.dir/Common.cpp.i: cmake_force
@@ -81,7 +96,8 @@ libs/Common/CMakeFiles/Common.dir/Common.cpp.s: cmake_force
 
 libs/Common/CMakeFiles/Common.dir/CUDA.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/CUDA.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/Common/CMakeFiles/Common.dir/CUDA.cpp.o"
+libs/Common/CMakeFiles/Common.dir/CUDA.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/Common/CMakeFiles/Common.dir/CUDA.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/CUDA.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/CUDA.cpp
 
 libs/Common/CMakeFiles/Common.dir/CUDA.cpp.i: cmake_force
@@ -94,7 +110,8 @@ libs/Common/CMakeFiles/Common.dir/CUDA.cpp.s: cmake_force
 
 libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.o"
+libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/ConfigTable.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/ConfigTable.cpp
 
 libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.i: cmake_force
@@ -107,7 +124,8 @@ libs/Common/CMakeFiles/Common.dir/ConfigTable.cpp.s: cmake_force
 
 libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.o"
+libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/EventQueue.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/EventQueue.cpp
 
 libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.i: cmake_force
@@ -120,7 +138,8 @@ libs/Common/CMakeFiles/Common.dir/EventQueue.cpp.s: cmake_force
 
 libs/Common/CMakeFiles/Common.dir/Log.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/Log.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/Common/CMakeFiles/Common.dir/Log.cpp.o"
+libs/Common/CMakeFiles/Common.dir/Log.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/Common/CMakeFiles/Common.dir/Log.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/Log.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Log.cpp
 
 libs/Common/CMakeFiles/Common.dir/Log.cpp.i: cmake_force
@@ -133,7 +152,8 @@ libs/Common/CMakeFiles/Common.dir/Log.cpp.s: cmake_force
 
 libs/Common/CMakeFiles/Common.dir/SML.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/SML.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/Common/CMakeFiles/Common.dir/SML.cpp.o"
+libs/Common/CMakeFiles/Common.dir/SML.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/Common/CMakeFiles/Common.dir/SML.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/SML.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/SML.cpp
 
 libs/Common/CMakeFiles/Common.dir/SML.cpp.i: cmake_force
@@ -146,7 +166,8 @@ libs/Common/CMakeFiles/Common.dir/SML.cpp.s: cmake_force
 
 libs/Common/CMakeFiles/Common.dir/Timer.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/Timer.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/Common/CMakeFiles/Common.dir/Timer.cpp.o"
+libs/Common/CMakeFiles/Common.dir/Timer.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/Common/CMakeFiles/Common.dir/Timer.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/Timer.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Timer.cpp
 
 libs/Common/CMakeFiles/Common.dir/Timer.cpp.i: cmake_force
@@ -159,7 +180,8 @@ libs/Common/CMakeFiles/Common.dir/Timer.cpp.s: cmake_force
 
 libs/Common/CMakeFiles/Common.dir/Types.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/Types.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/Common/CMakeFiles/Common.dir/Types.cpp.o"
+libs/Common/CMakeFiles/Common.dir/Types.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/Common/CMakeFiles/Common.dir/Types.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/Types.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Types.cpp
 
 libs/Common/CMakeFiles/Common.dir/Types.cpp.i: cmake_force
@@ -172,7 +194,8 @@ libs/Common/CMakeFiles/Common.dir/Types.cpp.s: cmake_force
 
 libs/Common/CMakeFiles/Common.dir/Util.cpp.o: libs/Common/CMakeFiles/Common.dir/flags.make
 libs/Common/CMakeFiles/Common.dir/Util.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/Common/CMakeFiles/Common.dir/Util.cpp.o"
+libs/Common/CMakeFiles/Common.dir/Util.cpp.o: libs/Common/cotire/Common_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/Common/CMakeFiles/Common.dir/Util.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Common.dir/Util.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common/Util.cpp
 
 libs/Common/CMakeFiles/Common.dir/Util.cpp.i: cmake_force
@@ -209,7 +232,7 @@ lib/libCommon.a: libs/Common/CMakeFiles/Common.dir/Types.cpp.o
 lib/libCommon.a: libs/Common/CMakeFiles/Common.dir/Util.cpp.o
 lib/libCommon.a: libs/Common/CMakeFiles/Common.dir/build.make
 lib/libCommon.a: libs/Common/CMakeFiles/Common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library ../../lib/libCommon.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library ../../lib/libCommon.a"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && $(CMAKE_COMMAND) -P CMakeFiles/Common.dir/cmake_clean_target.cmake
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Common.dir/link.txt --verbose=$(VERBOSE)
 
@@ -221,7 +244,9 @@ libs/Common/CMakeFiles/Common.dir/clean:
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common && $(CMAKE_COMMAND) -P CMakeFiles/Common.dir/cmake_clean.cmake
 .PHONY : libs/Common/CMakeFiles/Common.dir/clean
 
-libs/Common/CMakeFiles/Common.dir/depend:
+libs/Common/CMakeFiles/Common.dir/depend: libs/Common/cotire/Common_CXX_prefix.cxx
+libs/Common/CMakeFiles/Common.dir/depend: libs/Common/cotire/Common_CXX_prefix.hxx
+libs/Common/CMakeFiles/Common.dir/depend: libs/Common/cotire/Common_CXX_prefix.hxx.pch
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/finley/Desktop/course/CODE/MVS/openMVS /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Common /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Common/CMakeFiles/Common.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/Common/CMakeFiles/Common.dir/depend
 

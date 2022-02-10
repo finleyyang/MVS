@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/Common.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/Common.cpp.o"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/IBFS/IBFS.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/IBFS/IBFS.cpp.o"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/LMFit/lmmin.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/CMakeFiles/Math.dir/LMFit/lmmin.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/Math/cotire/Math_CXX_prefix.hxx.pch"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -39,7 +40,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include/eigen3"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/Math/."
   "/usr/local/include"
-  "/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"
+  "/usr/local/Cellar/opencv/4.5.4_4/include/opencv4"
   )
 
 # The set of dependency files which are needed:

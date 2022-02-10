@@ -23,6 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneRefineCUDA.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneTexture.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.o"
   "/Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SemiGlobalMatcher.cpp" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o"
+  "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx" "/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.pch"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -52,7 +53,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include/eigen3"
   "/Users/finley/Desktop/course/CODE/MVS/vcglib"
   "/usr/local/include"
-  "/usr/local/Cellar/opencv/4.5.3_3/include/opencv4"
+  "/usr/local/Cellar/opencv/4.5.4_4/include/opencv4"
   )
 
 # The set of dependency files which are needed:

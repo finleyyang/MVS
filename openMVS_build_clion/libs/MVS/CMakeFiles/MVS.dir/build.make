@@ -66,9 +66,24 @@ include libs/MVS/CMakeFiles/MVS.dir/progress.make
 # Include the compile flags for this target's objects.
 include libs/MVS/CMakeFiles/MVS.dir/flags.make
 
+libs/MVS/cotire/MVS_CXX_prefix.hxx.pch: libs/MVS/cotire/MVS_CXX_prefix.hxx
+libs/MVS/cotire/MVS_CXX_prefix.hxx.pch: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+libs/MVS/cotire/MVS_CXX_prefix.hxx.pch: libs/MVS/cotire/MVS_CXX_prefix.hxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX precompiled header libs/MVS/cotire/MVS_CXX_prefix.hxx.pch"
+	cd /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /Users/finley/Desktop/course/CODE/MVS/openMVS/build/Cotire.cmake precompile /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/MVS_CXX_Cotire.cmake /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx.pch /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Common.cpp
+
+libs/MVS/cotire/MVS_CXX_prefix.hxx: libs/MVS/cotire/MVS_CXX_prefix.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating CXX prefix header libs/MVS/cotire/MVS_CXX_prefix.hxx"
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /Users/finley/Desktop/course/CODE/MVS/openMVS/build/Cotire.cmake combine /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/MVS_CXX_Cotire.cmake /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.hxx /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.cxx
+
+libs/MVS/cotire/MVS_CXX_prefix.cxx: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Common.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating CXX prefix source libs/MVS/cotire/MVS_CXX_prefix.cxx"
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCOTIRE_BUILD_TYPE:STRING=Release -DCOTIRE_VERBOSE:BOOL=$(VERBOSE) -P /Users/finley/Desktop/course/CODE/MVS/openMVS/build/Cotire.cmake combine /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/MVS_CXX_Cotire.cmake /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/cotire/MVS_CXX_prefix.cxx /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Common.h
+
 libs/MVS/CMakeFiles/MVS.dir/Common.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/Common.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Common.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/Common.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Common.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/Common.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Common.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/Common.cpp.i: cmake_force
@@ -81,7 +96,8 @@ libs/MVS/CMakeFiles/MVS.dir/Common.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/Camera.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/Camera.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Camera.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/Camera.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Camera.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/Camera.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Camera.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/Camera.cpp.i: cmake_force
@@ -94,7 +110,8 @@ libs/MVS/CMakeFiles/MVS.dir/Camera.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/DepthMap.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/DepthMap.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/DepthMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/DepthMap.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/DepthMap.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/DepthMap.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/DepthMap.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/DepthMap.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/DepthMap.cpp.i: cmake_force
@@ -107,7 +124,8 @@ libs/MVS/CMakeFiles/MVS.dir/DepthMap.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/Image.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/Image.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Image.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/Image.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Image.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/Image.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Image.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/Image.cpp.i: cmake_force
@@ -120,7 +138,8 @@ libs/MVS/CMakeFiles/MVS.dir/Image.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/Mesh.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/Mesh.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Mesh.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/Mesh.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Mesh.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/Mesh.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Mesh.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/Mesh.cpp.i: cmake_force
@@ -133,7 +152,8 @@ libs/MVS/CMakeFiles/MVS.dir/Mesh.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/Platform.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/Platform.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Platform.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/Platform.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Platform.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/Platform.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Platform.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/Platform.cpp.i: cmake_force
@@ -146,7 +166,8 @@ libs/MVS/CMakeFiles/MVS.dir/Platform.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/PointCloud.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/PointCloud.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/PointCloud.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/PointCloud.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/PointCloud.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/PointCloud.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/PointCloud.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/PointCloud.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/PointCloud.cpp.i: cmake_force
@@ -159,7 +180,8 @@ libs/MVS/CMakeFiles/MVS.dir/PointCloud.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/RectsBinPack.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/RectsBinPack.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/RectsBinPack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/RectsBinPack.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/RectsBinPack.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/RectsBinPack.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/RectsBinPack.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/RectsBinPack.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/RectsBinPack.cpp.i: cmake_force
@@ -172,7 +194,8 @@ libs/MVS/CMakeFiles/MVS.dir/RectsBinPack.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/Scene.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/Scene.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Scene.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/Scene.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/Scene.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/Scene.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/Scene.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/Scene.cpp.i: cmake_force
@@ -185,7 +208,8 @@ libs/MVS/CMakeFiles/MVS.dir/Scene.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/SceneDensify.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/SceneDensify.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneDensify.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneDensify.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/SceneDensify.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneDensify.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/SceneDensify.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneDensify.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/SceneDensify.cpp.i: cmake_force
@@ -198,7 +222,8 @@ libs/MVS/CMakeFiles/MVS.dir/SceneDensify.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/SceneReconstruct.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/SceneReconstruct.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneReconstruct.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneReconstruct.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/SceneReconstruct.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneReconstruct.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/SceneReconstruct.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneReconstruct.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/SceneReconstruct.cpp.i: cmake_force
@@ -211,7 +236,8 @@ libs/MVS/CMakeFiles/MVS.dir/SceneReconstruct.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/SceneRefine.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/SceneRefine.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneRefine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneRefine.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/SceneRefine.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneRefine.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/SceneRefine.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneRefine.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/SceneRefine.cpp.i: cmake_force
@@ -224,7 +250,8 @@ libs/MVS/CMakeFiles/MVS.dir/SceneRefine.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneRefineCUDA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneRefineCUDA.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.i: cmake_force
@@ -237,7 +264,8 @@ libs/MVS/CMakeFiles/MVS.dir/SceneRefineCUDA.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneTexture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/SceneTexture.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SceneTexture.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.i: cmake_force
@@ -250,7 +278,8 @@ libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.s: cmake_force
 
 libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o: libs/MVS/CMakeFiles/MVS.dir/flags.make
 libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o: /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SemiGlobalMatcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o"
+libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o -c /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS/SemiGlobalMatcher.cpp
 
 libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.i: cmake_force
@@ -299,7 +328,7 @@ lib/libMVS.a: libs/MVS/CMakeFiles/MVS.dir/SceneTexture.cpp.o
 lib/libMVS.a: libs/MVS/CMakeFiles/MVS.dir/SemiGlobalMatcher.cpp.o
 lib/libMVS.a: libs/MVS/CMakeFiles/MVS.dir/build.make
 lib/libMVS.a: libs/MVS/CMakeFiles/MVS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library ../../lib/libMVS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library ../../lib/libMVS.a"
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && $(CMAKE_COMMAND) -P CMakeFiles/MVS.dir/cmake_clean_target.cmake
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MVS.dir/link.txt --verbose=$(VERBOSE)
 
@@ -311,7 +340,9 @@ libs/MVS/CMakeFiles/MVS.dir/clean:
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS && $(CMAKE_COMMAND) -P CMakeFiles/MVS.dir/cmake_clean.cmake
 .PHONY : libs/MVS/CMakeFiles/MVS.dir/clean
 
-libs/MVS/CMakeFiles/MVS.dir/depend:
+libs/MVS/CMakeFiles/MVS.dir/depend: libs/MVS/cotire/MVS_CXX_prefix.cxx
+libs/MVS/CMakeFiles/MVS.dir/depend: libs/MVS/cotire/MVS_CXX_prefix.hxx
+libs/MVS/CMakeFiles/MVS.dir/depend: libs/MVS/cotire/MVS_CXX_prefix.hxx.pch
 	cd /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/finley/Desktop/course/CODE/MVS/openMVS /Users/finley/Desktop/course/CODE/MVS/openMVS/libs/MVS /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS /Users/finley/Desktop/course/CODE/MVS/openMVS_build_clion/libs/MVS/CMakeFiles/MVS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/MVS/CMakeFiles/MVS.dir/depend
 
